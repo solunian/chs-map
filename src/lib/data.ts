@@ -1,4 +1,4 @@
-type ID = string | number;
+type ID = string;
 enum RoomType {
     ClassRoom,
     AdminRoom,
@@ -16,7 +16,7 @@ interface Room {
     id: ID;
     type: RoomType;
     nickname?: string;
-    teachers?: string[];
+    staff?: string[];
     desc?: string;
 }
 
@@ -24,22 +24,32 @@ interface Bldg {
     id: ID;
     rooms?: Room[];
     nickname?: string;
-    teachers?: string[];
+    staff?: string[];
     desc?: string;
 }
 
 
 interface Data {
     last_update_year: number;
-    github_link: string,
-    bldgs: Bldg[]
-
+    github_link: string;
+    bldgs: Map<ID, Bldg>;
 }
+
+
+let bldgs = {
+    "100": {
+        id: "100",
+        rooms: 
+    }
+}
+
 
 const data: Data = {
     last_update_year: 2023,
     github_link: "https://github.com/solunian/chs-map",
-    bldgs: []
+    bldgs: new Map(
+        
+    ),
 }
 
 
