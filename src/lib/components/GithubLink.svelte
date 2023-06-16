@@ -3,7 +3,7 @@
 </script>
 
 <!-- GITHUB LINK -->
-<div class="absolute right-6 top-4">
+<div class="fixed right-6 top-4">
     <a href={data.github_link} target="_blank">
     <svg viewBox="0 0 98 96" class="w-10 h-auto fill-rose-800 hover:fill-amber-400" xmlns="http://www.w3.org/2000/svg">
         <path

@@ -1,5 +1,4 @@
 <script lang="ts">
-    import adminSVG from "$lib/imgs/admin.svg";
     import data from "$lib/data";
 
     const clickAdmin = () => {
@@ -11,7 +10,7 @@
 
 <!-- <img id="admin" src={adminSVG} alt="admin"/> -->
 
-<div>
+<div class="hover:scale-105 hover:-translate-x-1 hover:-translate-y-1 transition">
     <svg viewBox="0 0 425 795" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
         <g transform="matrix(1,0,0,1,-4143.44,-862.854)">
             <g transform="matrix(0.942968,0,0,0.993496,987.21,348.26)">
@@ -60,16 +59,16 @@
 
     div {
         position: absolute;
-        left: 50vw;
-        top: 30rem;
-        width: 7vw;
+        left: 50rem;
+        top: 27rem;
+        width: 6rem;
     }
 
     h2 {
         position: relative;
-        top: 5.5vw;
-        left: 1.8vw;
-        font-size: 1.5vw;
+        top: 4.5rem;
+        left: 25%;
+        font-size: 1.2rem;
     }
 
     /* #admin {
