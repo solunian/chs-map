@@ -1,26 +1,57 @@
 <script lang="ts">
-    import data, { Subject, type Room } from "$lib/data";
+    import data, { RoomType } from "$lib/data";
+    import { defaultSubjectInfo, subjectDict, getNormalColor, getHoverColor } from "$lib/helper";
     import { onMount } from "svelte";
-    import { getSubjectColor } from "$lib/helper";
+    import RoomTypePill from "./RoomTypePill.svelte";
+    import SubjectPill from "./SubjectPill.svelte";
 
-    export let x: number, y: number, w: number, h: number, id: string, color: string;
+    export let x: number, y: number, w: number, h: number, id: string;
 
-    const room = data.rooms.get(id)!;
+    const room = data.rooms.get(id);
+    let subjectInfo;
+    if (room?.subjects == undefined) {
+        subjectInfo = defaultSubjectInfo;
+    } else {
+        subjectInfo = subjectDict[room.subjects[0]];
+    }
 
-    let subjectStr;
-    // ( { subjectStr, color } = getSubjectColor(room.subjects![0] || Subject.Special));
-    console.log(color)
+    let normalColor = getNormalColor(subjectInfo.color);
+    let hoverColor = getHoverColor(subjectInfo.color);
+
+    // let mainDiv: HTMLDivElement; bind:this={mainDiv}
+
+    let diplayText = room?.nickname || id;
+    let tooltipRoomText = room?.nickname || "Room " + id;
+    let tooltipTeachersText = room?.staff?.toString() || "anarchy?";
+
+    let tooltipWidth: number;
+
+    let tooltipTop = h + 20; // the offset from the top of the room in px
+    let tooltipLeft: number;
+    onMount(() => {
+        tooltipLeft = (w - tooltipWidth) / 2; // the offset from the left to make tooltip centered
+    });
+
 </script>
 
-<div id="tooltip-target" 
-class="absolute transition ease-in rounded hover:rounded-md border p-2 bg-{color}-700 hover:scale-105 hover:-translate-x-1 hover:-translate-y-1" 
-style="left: {x}px; top: {y}px; width: {w}px; height: {h}px">
+<div id="tooltip-target"
+class="absolute border-none transition ease-in rounded-md border p-2 hover:scale-105 hover:-translate-x-1 hover:-translate-y-1 text-center flex flex-col justify-center" 
+style="left: {x}px; top: {y}px; width: {w}px; height: {h}px; background-color: {normalColor};"
+on:mouseover={(e) => e.currentTarget.style.backgroundColor = hoverColor} 
+on:mouseleave={(e) => e.currentTarget.style.backgroundColor = normalColor} on:focus>
     
-    <div id="tooltip" class="pointer-events-none">
-        <h2>#️⃣ {room?.nickname || "Room " + id}</h2>
-        <h2>🍎 {room?.staff?.toString()}</h2>
-        <div class="flex flex-row">
+    <h2>{diplayText}</h2>
 
+    <div id="tooltip" class="pointer-events-none" bind:clientWidth={tooltipWidth}
+    style="top: {tooltipTop}px; left: {tooltipLeft}px;">
+        <h2>#️⃣ {tooltipRoomText}</h2>
+        <h2>🍎 {tooltipTeachersText}</h2>
+        
+        <div class="flex flex-row gap-1 mt-1">
+            <RoomTypePill roomType={room?.type || RoomType.ClassRoom}/>
+            {#each room?.subjects || [] as subject}
+                <SubjectPill subjectType={subject}/>
+            {/each}
         </div>
     </div>
 </div>
@@ -35,11 +66,9 @@ style="left: {x}px; top: {y}px; width: {w}px; height: {h}px">
     }
 
     #tooltip {
-        top: 130%;
-        left: -10%;
         @apply invisible bg-black text-white text-center;
         @apply absolute z-10 whitespace-nowrap;
-        @apply rounded-md py-0.5 px-2.5;
+        @apply rounded-md py-3 px-3;
     }
     #tooltip-target:hover > #tooltip {
         @apply visible;

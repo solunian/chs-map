@@ -1,4 +1,4 @@
-# Campus Map for Cupertino High School
+# Campus Map for Cupertino High School 🗺️
 
 ## Dev Notes
 - this is either gonna suck or be kinda cool

@@ -1,60 +1,80 @@
-import { Subject } from "$lib/data";
+import { RoomType, Subject } from "$lib/data";
+import colors from "$lib/tailwindColors";
 
-export function getSubjectColor(subject: Subject) {
-    let subjectStr = "";
-    let color = "";
-
-    switch (subject) {
-        case Subject.Art: {
-            subjectStr = "Art";
-            color = "fuchsia";
-            break;
-        }
-        case Subject.Science: {
-            subjectStr = "Science";
-            color = "green";
-            break;
-        }
-        case Subject.Math: {
-            subjectStr = "Math";
-            color = "red";
-            break;
-        }
-        case Subject.Music: {
-            subjectStr = "Music";
-            color = "emerald";
-            break;
-        }
-        case Subject.English: {
-            subjectStr = "English";
-            color = "blue";
-            break;
-        }
-        case Subject.History: {
-            subjectStr = "History";
-            color = "purple";
-            break;
-        }
-        case Subject.Language: {
-            subjectStr = "Language";
-            color = "orange";
-            break;
-        }
-        case Subject.PE: {
-            subjectStr = "PE";
-            color = "yellow";
-            break;
-        }
-        case Subject.Special: {
-            subjectStr = "Special";
-            color = "pink";
-            break;
-        }
-    }
-
-    return { subjectStr, color };
+interface SubjectInfo {
+    subjectStr: string,
+    color: string,
 }
 
-// <span class="bg-{color}-700 text-white px-3 py-1 mx-2 my-1 rounded-xl">
-// {value}
-// </span>
+// lol this an javascript array acting as a dictionary
+export let subjectDict: SubjectInfo[] = [];
+// all the subject color definitions
+{
+    subjectDict[Subject.Art] = {
+        subjectStr: "art",
+        color: "fuchsia",
+    };
+    subjectDict[Subject.English] = {
+        subjectStr: "english",
+        color: "blue",
+    };
+    subjectDict[Subject.History] = {
+        subjectStr: "history",
+        color: "purple",
+    };
+    subjectDict[Subject.Language] = {
+        subjectStr: "language",
+        color: "orange",
+    };
+    subjectDict[Subject.Math] = {
+        subjectStr: "math",
+        color: "red",
+    };
+    subjectDict[Subject.Music] = {
+        subjectStr: "music",
+        color: "emerald",
+    };
+    subjectDict[Subject.PE] = {
+        subjectStr: "PE",
+        color: "yellow",
+    };
+    subjectDict[Subject.Science] = {
+        subjectStr: "science",
+        color: "red",
+    };
+    subjectDict[Subject.Special] = {
+        subjectStr: "special",
+        color: "pink",
+    };
+}
+export const defaultSubjectInfo: SubjectInfo = {
+    subjectStr: "",
+    color: "gray",
+}
+
+export const getRoomTypeText = (roomType: RoomType): string => {
+    switch (roomType) {
+        case RoomType.AdminRestRoom:
+            return "staff restroom";
+        case RoomType.ClassRoom:
+            return "classroom";
+        case RoomType.AdminRoom:
+            return "staff room";
+        case RoomType.BoyRestRoom:
+            return "boys' restroom";
+        case RoomType.GirlRestRoom:
+            return "girls' restroom";
+        case RoomType.MultiPurposeRoom:
+            return "multi-purpose";
+        case RoomType.RecArea:
+            return "recreation";
+        case RoomType.ParkingLot:
+            return "parking lot";      
+    }
+    return "";
+}
+
+
+export const getCustomColor = (color: string, shade: string) => colors[color][shade];
+export const getNormalColor = (color: string) => getCustomColor(color, "200");
+export const getHoverColor = (color: string) => getCustomColor(color, "300");
