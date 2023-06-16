@@ -43,4 +43,4 @@ const data: Data = {
 }
 
 
-export default { data };
+export default data;
