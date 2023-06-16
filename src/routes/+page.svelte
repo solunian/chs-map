@@ -1,5 +1,8 @@
 <script lang="ts">
-    import data from "$lib/data";
+    import data, { Subject } from "$lib/data";
+
+    import Rect from "$lib/components/Rect.svelte";
+    import { getSubjectColor } from "$lib/helper";
 
     const clickAdmin = () => {
         console.log(data);
@@ -9,6 +12,8 @@
 
 
 <!-- <img id="admin" src={adminSVG} alt="admin"/> -->
+
+<Rect x={100} y={300} w={100} h={50} id={"413"} color={getSubjectColor(Subject.Math).color}/>
 
 <div class="hover:scale-105 hover:-translate-x-1 hover:-translate-y-1 transition">
     <svg viewBox="0 0 425 795" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">

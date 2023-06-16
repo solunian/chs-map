@@ -1,5 +1,5 @@
-type ID = string;
-enum RoomType {
+export type ID = string;
+export enum RoomType {
     ClassRoom,
     AdminRoom,
 
@@ -12,7 +12,7 @@ enum RoomType {
     ParkingLot,
 }
 
-enum Subject {
+export enum Subject {
     Science,
     Math,
     Art,
@@ -24,7 +24,7 @@ enum Subject {
     Special,
 }
 
-interface Room {
+export interface Room {
     type: RoomType;
     nickname?: string;
     staff?: string[];
@@ -32,21 +32,14 @@ interface Room {
     desc?: string;
 }
 
-interface Bldg {
-    rooms?: Map<ID, Room>;
-    nickname?: string;
-    staff?: string[];
-    desc?: string;
-}
-
-interface Data {
+export interface Data {
     last_update_year: number;
     github_link: string;
-    bldgs: Map<ID, Bldg>;
+    rooms: Map<ID, Room>;
 }
 
 // object to map function to make my life easier
-const o2m = (o: Object): Map<ID, Bldg | Room> => new Map(Object.entries(o));
+const o2m = (o: Object): Map<ID, Room> => new Map(Object.entries(o));
 const b100 = o2m({
     "101": {
         type: RoomType.ClassRoom
@@ -95,9 +88,32 @@ const b300 = o2m({
 
 });
 const b400 = o2m({
+    "413": {
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Woo"],
+        subjects: [Subject.Math],
+    }
 
 });
 const b500 = o2m({
+
+});
+const b700 = o2m({
+
+});
+const b800 = o2m({
+
+});
+const b900 = o2m({
+
+});
+const b6000 = o2m({
+
+});
+const b7000 = o2m({
+
+});
+const bMain = o2m({
 
 });
 const bMisc = o2m({
@@ -115,26 +131,23 @@ const bMisc = o2m({
 })
 
 
-const bldgs = o2m({
-    "100": {
-        rooms: b100,
-    },
-    "theater": {
-        nickname: "Robert L. Gomez Theater",
-    },
-    "admin": {
-
-    },
-    "misc": {
-
-    }
-});
-
-
 const data: Data = {
     last_update_year: 2023,
     github_link: "https://github.com/solunian/chs-map",
-    bldgs: bldgs,
+    rooms: new Map([
+        ...b100,
+        ...b200,
+        ...b300,
+        ...b400,
+        ...b500,
+        ...b700,
+        ...b800,
+        ...b900,
+        ...b6000,
+        ...b7000,
+        ...bMain,
+        ...bMisc,
+    ]),
 }
 
 
