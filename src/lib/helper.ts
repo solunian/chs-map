@@ -1,3 +1,4 @@
+import type { ID, Room } from "$lib/types";
 import { RoomType, Subject } from "$lib/types";
 import colors from "$lib/tailwindColors";
 
@@ -40,7 +41,7 @@ export let subjectDict: SubjectInfo[] = [];
     };
     subjectDict[Subject.Science] = {
         subjectStr: "science",
-        color: "red",
+        color: "green",
     };
     subjectDict[Subject.Special] = {
         subjectStr: "special",
@@ -91,3 +92,6 @@ export const formatTeacherList = (teacherArr: string[] | undefined) => {
         return result + teacherArr[teacherArr.length - 1];
     }
 }
+
+// object to map function to make my life easier
+export const o2m = (o: Object): Map<ID, Room> => new Map(Object.entries(o));

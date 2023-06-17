@@ -2,7 +2,6 @@ export type ID = string;
 export enum RoomType {
     ClassRoom,
     AdminRoom,
-    MysteryRoom,
 
     BoyRestRoom,
     GirlRestRoom,

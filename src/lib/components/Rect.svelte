@@ -42,7 +42,7 @@
 
 <div>
     <div id="tooltip-target"
-    class="absolute border-none transition ease-in rounded-md border p-2 hover:scale-105 hover:-translate-x-1 hover:-translate-y-1 text-center flex flex-col justify-center cursor-default" 
+    class="absolute border-none transition ease-in rounded-md border p-1 hover:scale-105 hover:-translate-x-1 hover:-translate-y-1 text-center flex flex-col justify-center cursor-default" 
     style="left: {x}px; top: {y}px; width: {w}px; height: {h}px; background-color: {normalColor};"
     on:mouseover={(e) => e.currentTarget.style.backgroundColor = hoverColor} 
     on:mouseleave={(e) => e.currentTarget.style.backgroundColor = normalColor} on:focus>

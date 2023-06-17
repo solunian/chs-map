@@ -4,7 +4,7 @@
 
     // upper left coordinate of building
     const ul: Point = { x: 820, y: 350 };
-    const ids1 = ["116", "115", "114", "office", "110", "109", "108"];
+    const ids1 = ["116", "115", "114", "office_100", "110", "109", "108"];
     const ids2 = ["107", "106", "105", "104", "103", "102", "101"];
     const w = 50, h = 32;
     const off = 5;
