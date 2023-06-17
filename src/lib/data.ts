@@ -53,7 +53,7 @@ const b100 = {
 const b200 = {
     "202": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Chen"],
+        staff: ["Mrs. Chen"],
         subjects: [Subject.English],    
     },
     "203": {
@@ -146,14 +146,16 @@ const b400 = {
     },
     "405": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Jaenig"],
+        staff: ["Ms. Jaehnig"],
         subjects: [Subject.Math],
     },
     "407": {
         type: RoomType.ClassRoom
     },
     "409": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Aguilar"],
+        subjects: [Subject.Language],
     },
     "410": {
         type: RoomType.ClassRoom,
@@ -335,12 +337,16 @@ const b6000 = {
     },
     "6110": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Aggoun"],
+        subjects: [Subject.Language],
     },
     "6111": {
         type: RoomType.ClassRoom,
     },
     "6115": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Fan"],
+        subjects: [Subject.Language],
     },
     "6116": {
         type: RoomType.ClassRoom,
@@ -428,7 +434,7 @@ const b6000 = {
 const b7000 = {
     "7101": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Goldencranz"],
+        staff: ["Mr. Goldenkranz"],
         subjects: [Subject.Science]
     },
     "7102": {

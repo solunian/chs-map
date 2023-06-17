@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { RoomType } from "$lib/data";
+    import type { RoomType } from "$lib/types";
     import { getCustomColor, getRoomTypeText } from "$lib/helper";
 
     export let roomType: RoomType;
