@@ -15,7 +15,7 @@
 
 <div class="w-full h-full">
     <!-- CUPERTINO HIGH SCHOOL HEADER -->
-    <header class="fixed inline left-6 rounded-b-xl text-3xl bg-amber-200 font-bold py-4 px-8 text-rose-700 hover:animate-wiggle">
+    <header class="fixed inline left-6 rounded-b-xl text-3xl bg-amber-200 font-bold py-4 px-8 text-rose-700 hover:animate-wiggle z-20">
         {#if width <= MD_BREAKPOINT}
             CHS Map
         {:else}

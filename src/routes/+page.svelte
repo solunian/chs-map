@@ -1,12 +1,19 @@
 <script lang="ts">
     import Admin from "$lib/components/Admin.svelte";
-    import ThousandsBldg from "$lib/components/ThousandsBldg.svelte";
+    import BldgThousands from "$lib/components/BldgThousands.svelte";
+    import BldgNine from "$lib/components/BldgNine.svelte";
+    import BldgFour from "$lib/components/BldgFour.svelte";
+    import BldgThree from "$lib/components/BldgThree.svelte";
+    import BldgTwo from "$lib/components/BldgTwo.svelte";
+    import BldgOne from "$lib/components/BldgOne.svelte";
 </script>
 
 
-<ThousandsBldg/>
-
-
-<Admin/>
+<BldgThousands/>
+<BldgNine/>
+<BldgFour/>
+<BldgThree/>
+<BldgTwo/>
+<BldgOne/>
 
 

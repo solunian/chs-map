@@ -1,6 +1,6 @@
 <script lang="ts">
     import data, { RoomType } from "$lib/data";
-    import { defaultSubjectInfo, subjectDict, getNormalColor, getHoverColor } from "$lib/helper";
+    import { defaultSubjectInfo, subjectDict, getNormalColor, getHoverColor, formatTeacherList } from "$lib/helper";
     import { onMount } from "svelte";
     import RoomTypePill from "./RoomTypePill.svelte";
     import SubjectPill from "./SubjectPill.svelte";
@@ -24,7 +24,7 @@
     } 
 
     let tooltipRoomText = room?.nickname || "Room " + id;
-    let tooltipTeachersText = room?.staff?.toString() || "anarchy?";
+    let tooltipTeachersText = formatTeacherList(room?.staff);
     
     let normalColor = getNormalColor(color);
     let hoverColor = getHoverColor(color);
@@ -41,19 +41,19 @@
 
 <div>
     <div id="tooltip-target"
-    class="absolute border-none transition ease-in rounded-md border p-2 hover:scale-105 hover:-translate-x-1 hover:-translate-y-1 text-center flex flex-col justify-center" 
+    class="absolute border-none transition ease-in rounded-md border p-2 hover:scale-105 hover:-translate-x-1 hover:-translate-y-1 text-center flex flex-col justify-center cursor-default" 
     style="left: {x}px; top: {y}px; width: {w}px; height: {h}px; background-color: {normalColor};"
     on:mouseover={(e) => e.currentTarget.style.backgroundColor = hoverColor} 
     on:mouseleave={(e) => e.currentTarget.style.backgroundColor = normalColor} on:focus>
         
-        <h2 class="text-lg">{displayText}</h2>
+        <h2 class="text-md">{displayText}</h2>
         
     </div>
 
     <div id="tooltip" class="pointer-events-none" bind:clientWidth={tooltipWidth}
     style="top: {y + tooltipTop}px; left: {x + tooltipLeft}px;">
         <h3>#️⃣ {tooltipRoomText}</h3>
-        
+
         {#if room?.type === RoomType.ClassRoom}
             <h3>🍎 {tooltipTeachersText}</h3>
         {/if}

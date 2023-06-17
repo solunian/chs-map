@@ -55,17 +55,14 @@ export const defaultSubjectInfo: SubjectInfo = {
 export const getRoomTypeText = (roomType: RoomType): string => {
     switch (roomType) {
         case RoomType.AdminRestRoom:
-            return "staff restroom";
+        case RoomType.BoyRestRoom:
+        case RoomType.GirlRestRoom:
+        case RoomType.UnisexRestRoom:
+            return "restroom";
         case RoomType.ClassRoom:
             return "classroom";
         case RoomType.AdminRoom:
             return "staff room";
-        case RoomType.BoyRestRoom:
-            return "restroom";
-        case RoomType.GirlRestRoom:
-            return "restroom";
-        case RoomType.UnisexRestRoom:
-            return "restroom";
         case RoomType.MultiPurposeRoom:
             return "multi-purpose";
         case RoomType.RecArea:
@@ -82,3 +79,17 @@ export type Point = { x: number, y: number };
 export const getCustomColor = (color: string, shade: string) => colors[color][shade];
 export const getNormalColor = (color: string) => getCustomColor(color, "200");
 export const getHoverColor = (color: string) => getCustomColor(color, "300");
+
+export const formatTeacherList = (teacherArr: string[] | undefined) => {
+    if (teacherArr == undefined || teacherArr.length === 0) {
+        return "anarchy?";
+    } else if (teacherArr.length === 1) {
+        return teacherArr[0];
+    } else {
+        let result = "";
+        for (let i = 0; i < teacherArr.length - 1; i++) {
+            result += teacherArr[i] + ", ";
+        }
+        return result + teacherArr[teacherArr.length - 1];
+    }
+}

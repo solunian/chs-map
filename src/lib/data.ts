@@ -106,6 +106,11 @@ const b800 = o2m({
 
 });
 const b900 = o2m({
+    "916": {
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Canton"],
+        subjects: [Subject.Language],
+    }
 
 });
 const b6000 = o2m({
@@ -118,6 +123,11 @@ const bMain = o2m({
 
 });
 const bMisc = o2m({
+    "staff_lounge": {
+        nickname: "Teachers' Lounge",
+        type: RoomType.AdminRoom,
+        teachers: [],
+    },
     "dance_studio": {
         nickname: "Dance Studio",
         type: RoomType.MultiPurposeRoom,
@@ -137,7 +147,7 @@ const bMisc = o2m({
         type: RoomType.GirlRestRoom,
     },
     "arr_6000_1": {
-        nickname: "Staff' Restroom",
+        nickname: "Staff Restroom",
         type: RoomType.AdminRestRoom,
     },
 })
