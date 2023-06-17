@@ -23,7 +23,9 @@ const b100 = {
         type: RoomType.ClassRoom
     },
     "107": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Hazeghi"],
+        subjects: [Subject.English],
     },
     "108": {
         type: RoomType.ClassRoom
@@ -50,10 +52,14 @@ const b100 = {
 };
 const b200 = {
     "202": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Chen"],
+        subjects: [Subject.English],    
     },
     "203": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Lowe-Weiler"],
+        subjects: [Subject.History],
     },
     "204": {
         type: RoomType.ClassRoom
@@ -65,10 +71,12 @@ const b200 = {
         type: RoomType.ClassRoom,
     },
     "208": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
     },
     "210": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Sato"],
+        subjects: [Subject.English],
     },
     "211": {
         type: RoomType.ClassRoom
@@ -116,7 +124,9 @@ const b300 = {
         type: RoomType.ClassRoom
     },
     "318": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Martinez"],
+        subjects: [Subject.Language],
     },
     "office_300": {
         type: RoomType.AdminRoom,
@@ -135,7 +145,9 @@ const b400 = {
         type: RoomType.ClassRoom
     },
     "405": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Jaenig"],
+        subjects: [Subject.Math],
     },
     "407": {
         type: RoomType.ClassRoom
@@ -144,13 +156,17 @@ const b400 = {
         type: RoomType.ClassRoom
     },
     "410": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
     },
     "411": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Instructor Choe"],
+        subjects: [Subject.Math],
     },
     "412": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Instructor Roberts"],
+        subjects: [Subject.Math],
     },
     "413": {
         type: RoomType.ClassRoom,
@@ -170,6 +186,8 @@ const b400 = {
 const b500 = {
     "501": {
         type: RoomType.ClassRoom,
+        staff: ["Mr. Mitchell"],
+        subjects: [Subject.Science],
     },
     "502": {
         type: RoomType.ClassRoom,
@@ -182,14 +200,18 @@ const b500 = {
         subjects: [Subject.Science],
     },
     "504": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Bagamaspad"],
+        subjects: [Subject.Science],
     },
     "505": {
         type: RoomType.AdminRoom,
         nickname: "Staff Room",
     },
     "506": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Steemers"],
+        subjects: [Subject.Science],
     },
     "507": {
         type: RoomType.ClassRoom,
@@ -200,7 +222,9 @@ const b500 = {
         type: RoomType.ClassRoom
     },
     "509": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Slowikowski"],
+        subjects: [Subject.Science],
     },
 };
 const b700 = {
@@ -300,6 +324,8 @@ const b900 = {
 const b6000 = {
     "6101": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Jin"],
+        subjects: [Subject.Language],
     },
     "6105": {
         type: RoomType.ClassRoom,
@@ -402,6 +428,8 @@ const b6000 = {
 const b7000 = {
     "7101": {
         type: RoomType.ClassRoom,
+        staff: ["Mr. Goldencranz"],
+        subjects: [Subject.Science]
     },
     "7102": {
         type: RoomType.ClassRoom,
@@ -416,6 +444,8 @@ const b7000 = {
     },
     "7202": {
         type: RoomType.ClassRoom,
+        staff: ["Mr. Mitchell"],
+        subjects: [Subject.Science],
     },
     "7203": {
         type: RoomType.ClassRoom,
@@ -493,7 +523,6 @@ const bMisc = {
         nickname: "Field House",
     },
 };
-
 
 const data: Data = {
     last_update_year: 2023,
