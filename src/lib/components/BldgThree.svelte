@@ -1,6 +1,6 @@
 <script lang="ts">
     import Rect from "$lib/components/Rect.svelte";
-    import type { Point } from "$lib/helper";
+    import type { Point } from "$lib/types";
 
     // upper left coordinate of building
     const ul: Point = { x: 420, y: 320 };

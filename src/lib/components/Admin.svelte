@@ -1,5 +1,5 @@
 <script lang="ts">
-    import data, { Subject } from "$lib/data";
+    import data from "$lib/data";
     const clickAdmin = () => {
         console.log(data);
     }

@@ -1,5 +1,6 @@
 <script lang="ts">
-    import data, { RoomType } from "$lib/data";
+    import { RoomType } from "$lib/types";
+    import data from "$lib/data";
     import { defaultSubjectInfo, subjectDict, getNormalColor, getHoverColor, formatTeacherList } from "$lib/helper";
     import { onMount } from "svelte";
     import RoomTypePill from "./RoomTypePill.svelte";

@@ -6,6 +6,7 @@
     import BldgThree from "$lib/components/BldgThree.svelte";
     import BldgTwo from "$lib/components/BldgTwo.svelte";
     import BldgOne from "$lib/components/BldgOne.svelte";
+    import BldgFive from "$lib/components/BldgFive.svelte";
 </script>
 
 
@@ -15,5 +16,6 @@
 <BldgThree/>
 <BldgTwo/>
 <BldgOne/>
+<BldgFive/>
 
 

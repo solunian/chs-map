@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-    <title>CHS Map</title>
+    <title>Cupertino High School Map</title>
 </svelte:head>
 
 <svelte:window bind:innerWidth={width}/>

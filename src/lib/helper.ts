@@ -1,4 +1,4 @@
-import { RoomType, Subject } from "$lib/data";
+import { RoomType, Subject } from "$lib/types";
 import colors from "$lib/tailwindColors";
 
 interface SubjectInfo {
@@ -72,8 +72,6 @@ export const getRoomTypeText = (roomType: RoomType): string => {
     }
     return "";
 }
-
-export type Point = { x: number, y: number };
 
 
 export const getCustomColor = (color: string, shade: string) => colors[color][shade];
