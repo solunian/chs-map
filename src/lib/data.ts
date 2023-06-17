@@ -2,16 +2,17 @@ export type ID = string;
 export enum RoomType {
     ClassRoom,
     AdminRoom,
+    MysteryRoom,
 
     BoyRestRoom,
     GirlRestRoom,
+    UnisexRestRoom,
     AdminRestRoom,
 
     MultiPurposeRoom,
     RecArea,
     ParkingLot,
 }
-
 export enum Subject {
     Science,
     Math,
@@ -127,7 +128,18 @@ const bMisc = o2m({
         type: RoomType.MultiPurposeRoom,
         subjects: [Subject.PE],
     },
-    
+    "brr_6000_1": {
+        nickname: "Boys' Restroom",
+        type: RoomType.BoyRestRoom,
+    },
+    "grr_6000_1": {
+        nickname: "Girls' Restroom",
+        type: RoomType.GirlRestRoom,
+    },
+    "arr_6000_1": {
+        nickname: "Staff' Restroom",
+        type: RoomType.AdminRestRoom,
+    },
 })
 
 

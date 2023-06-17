@@ -61,18 +61,22 @@ export const getRoomTypeText = (roomType: RoomType): string => {
         case RoomType.AdminRoom:
             return "staff room";
         case RoomType.BoyRestRoom:
-            return "boys' restroom";
+            return "restroom";
         case RoomType.GirlRestRoom:
-            return "girls' restroom";
+            return "restroom";
+        case RoomType.UnisexRestRoom:
+            return "restroom";
         case RoomType.MultiPurposeRoom:
             return "multi-purpose";
         case RoomType.RecArea:
             return "recreation";
         case RoomType.ParkingLot:
-            return "parking lot";      
+            return "parking lot";
     }
     return "";
 }
+
+export type Point = { x: number, y: number };
 
 
 export const getCustomColor = (color: string, shade: string) => colors[color][shade];
