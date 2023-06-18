@@ -47,7 +47,7 @@
     on:mouseover={(e) => e.currentTarget.style.backgroundColor = hoverColor} 
     on:mouseleave={(e) => e.currentTarget.style.backgroundColor = normalColor} on:focus>
         
-        <h2 class="text-md">{displayText}</h2>
+        <h2 class="text-md leading-5">{displayText}</h2>
         
     </div>
 

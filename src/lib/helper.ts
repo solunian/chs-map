@@ -33,7 +33,7 @@ export let subjectDict: SubjectInfo[] = [];
     };
     subjectDict[Subject.Music] = {
         subjectStr: "music",
-        color: "emerald",
+        color: "indigo",
     };
     subjectDict[Subject.PE] = {
         subjectStr: "PE",

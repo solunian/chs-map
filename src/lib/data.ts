@@ -252,11 +252,12 @@ const b700 = {
     "702": {
         type: RoomType.ClassRoom,
         nickname: "Band Room",
+        staff: ["Mr. Scharf"],
         subjects: [Subject.Music],
     },
     "703": {
-        type: RoomType.ClassRoom,
-        nickname: "band?",
+        type: RoomType.MultiPurposeRoom,
+        nickname: "Color Guard",
         subjects: [Subject.Music],
     },
     "708": {
@@ -280,7 +281,16 @@ const b700 = {
     },
     "724": {
         type: RoomType.AdminRoom,
-        nickname: "ASB Office",
+        nickname: "ASB",
+        staff: ["Ms. Nguyen"]
+    },
+    "brr_700": {
+        nickname: "Boys' Restroom",
+        type: RoomType.BoyRestRoom,
+    },
+    "grr_700": {
+        nickname: "Girls' Restroom",
+        type: RoomType.GirlRestRoom,
     },
 };
 const b800 = {
@@ -511,7 +521,6 @@ const bMain = {
     },
     "1214": {
         type: RoomType.ClassRoom,
-        nickname: "???",
     },
     "1215": {
         type: RoomType.ClassRoom,

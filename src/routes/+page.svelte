@@ -8,6 +8,8 @@
     import BldgFive from "$lib/components/BldgFive.svelte";
     import FloorToggle from "$lib/components/FloorToggle.svelte";
     import Header from "$lib/components/Header.svelte";
+    import BldgSeven from "$lib/components/BldgSeven.svelte";
+    import BldgEight from "$lib/components/BldgEight.svelte";
 </script>
 
 
@@ -21,5 +23,7 @@
 <BldgTwo/>
 <BldgOne/>
 <BldgFive/>
+<BldgSeven/>
+<BldgEight/>
 
 
