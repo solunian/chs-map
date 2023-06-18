@@ -474,7 +474,7 @@ const b7000 = {
     },
     "7201": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Stavis", "Ms. Plat"],
+        staff: ["Ms. Plat"],
         subjects: [Subject.Science],
     },
     "7202": {
@@ -532,6 +532,7 @@ const bMisc = {
     "gym": {
         type: RoomType.MultiPurposeRoom,
         nickname: "Gym",
+        subjects: [Subject.PE],
     },
     "dance_studio": {
         type: RoomType.MultiPurposeRoom,
@@ -541,6 +542,7 @@ const bMisc = {
     "g_lockers": {
         type: RoomType.MultiPurposeRoom,
         nickname: "Girls' Lockers",
+        subjects: [Subject.PE],
     },
     "mat_room": {
         type: RoomType.MultiPurposeRoom,
@@ -550,14 +552,17 @@ const bMisc = {
     "b_lockers": {
         type: RoomType.MultiPurposeRoom,
         nickname: "Boys' Lockers",
+        subjects: [Subject.PE],
     },
     "weight_room": {
         type: RoomType.MultiPurposeRoom,
         nickname: "Weight Room",
+        subjects: [Subject.PE],
     },
     "field_house": {
         type: RoomType.MultiPurposeRoom,
         nickname: "Field House",
+        subjects: [Subject.PE],
     },
 };
 

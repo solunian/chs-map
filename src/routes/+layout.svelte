@@ -2,6 +2,7 @@
     import "../app.css";
     import MusicPlayer from "$lib/components/MusicPlayer.svelte";
     import GithubLink from "$lib/components/GithubLink.svelte";
+    import FloorToggle from "$lib/components/FloorToggle.svelte";
 
     let width: number;
     const MD_BREAKPOINT = 700;
@@ -22,6 +23,8 @@
             Cupertino High School Map
         {/if}
     </header>
+
+    <FloorToggle/>
 
     <MusicPlayer/>
 
