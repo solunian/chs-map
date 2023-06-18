@@ -1,1 +1,1 @@
-export const MD_BREAKPOINT: number = 720;
+export const MD_BREAKPOINT: number = 750;

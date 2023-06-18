@@ -55,7 +55,7 @@
     style="top: {y + tooltipTop}px; left: {x + tooltipLeft}px;">
         <h3>#️⃣ {tooltipRoomText}</h3>
 
-        {#if room?.type === RoomType.ClassRoom}
+        {#if room?.type === RoomType.ClassRoom || room?.type === RoomType.AdminRoom}
             <h3>🍎 {tooltipTeachersText}</h3>
         {/if}
         
