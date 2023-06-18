@@ -95,7 +95,7 @@ const b200 = {
     "215": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Cryan"],
-        subjects: []
+        subjects: [Subject.Math, Subject.Special],
     },
 };
 const b300 = {
@@ -119,10 +119,14 @@ const b300 = {
         subjects: [Subject.Special],
     },
     "315": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Lucatero"],
+        subjects: [Subject.Language]
     },
     "316": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Hill"],
+        subjects: [Subject.Special],
     },
     "317": {
         type: RoomType.ClassRoom
@@ -323,6 +327,8 @@ const b900 = {
     },
     "913": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Demetriou"],
+        subjects: [Subject.Math],
     },
     "914": {
         type: RoomType.ClassRoom,
@@ -405,6 +411,8 @@ const b6000 = {
     },
     "6217": {
         type: RoomType.ClassRoom,
+        staff: ["Mrs. Morse"],
+        subjects: [Subject.Math],
     },
     "6221": {
         type: RoomType.ClassRoom,
@@ -424,6 +432,8 @@ const b6000 = {
     },
     "6232": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Loo"],
+        subjects: [Subject.English],
     },
     "brr_6000_1": {
         nickname: "Boys' Restroom",
@@ -464,7 +474,7 @@ const b7000 = {
     },
     "7201": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Stavis"],
+        staff: ["Mr. Stavis", "Ms. Plat"],
         subjects: [Subject.Science],
     },
     "7202": {
@@ -474,6 +484,8 @@ const b7000 = {
     },
     "7203": {
         type: RoomType.ClassRoom,
+        staff: ["Mr. Stavis"],
+        subjects: [Subject.Science],
     },
 };
 const bMain = {

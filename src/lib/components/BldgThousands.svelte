@@ -12,8 +12,10 @@
 <!-- 6000 BLDG, FLOOR 1-->
 <div>
     <!-- LEFT SIDE: UP TO DOWN -->
-    <Rect id={"6106"} x={ul.x} y={ul.y + 20} {w} {h}/>
-    <Rect id={"6105"} x={ul.x} y={ul.y + 20 + (h + off)} {w} {h}/>
+    <!-- <Rect id={"6106"} x={ul.x} y={ul.y + 20} {w} {h}/>
+    <Rect id={"6105"} x={ul.x} y={ul.y + 20 + (h + off)} {w} {h}/> -->
+    
+    <Rect id={"6105"} x={ul.x} y={ul.y + 20} {w} h={h * 2 + off}/>
     <Rect id={"6101"} x={ul.x} y={ul.y + 20 + (h + off) * 2 + 40} {w} {h}/>
     
     <!-- UP SIDE: LEFT TO RIGHT -->
