@@ -71,7 +71,6 @@ export const getRoomTypeText = (roomType: RoomType): string => {
         case RoomType.ParkingLot:
             return "parking lot";
     }
-    return "";
 }
 
 

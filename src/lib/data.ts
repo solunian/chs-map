@@ -43,7 +43,9 @@ const b100 = {
         type: RoomType.ClassRoom
     },
     "116": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Bui"],
+        subjects: [Subject.Special],
     },
     "office_100": {
         type: RoomType.AdminRoom,
@@ -91,7 +93,9 @@ const b200 = {
         type: RoomType.ClassRoom
     },
     "215": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Cryan"],
+        subjects: []
     },
 };
 const b300 = {
@@ -150,7 +154,9 @@ const b400 = {
         subjects: [Subject.Math],
     },
     "407": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Bai"],
+        subjects: [Subject.Language],
     },
     "409": {
         type: RoomType.ClassRoom,
@@ -176,13 +182,17 @@ const b400 = {
         subjects: [Subject.Math],
     },
     "418": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Benson"],
+        subjects: [Subject.Math]
     },
     "419": {
         type: RoomType.ClassRoom
     },
     "420": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Tsai"],
+        subjects: [Subject.Math]
     },
 };
 const b500 = {
@@ -303,9 +313,13 @@ const b900 = {
     },
     "911": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Lou"],
+        subjects: [Subject.Math],
     },
     "912": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Maleski"],
+        subjects: [Subject.Math],
     },
     "913": {
         type: RoomType.ClassRoom,
@@ -331,6 +345,7 @@ const b6000 = {
     },
     "6105": {
         type: RoomType.ClassRoom,
+        subjects: [Subject.Special],
     },
     "6106": {
         type: RoomType.ClassRoom,
@@ -373,6 +388,8 @@ const b6000 = {
     },
     "6205": {
         type: RoomType.ClassRoom,
+        staff: ["Mr. Yeh"],
+        subjects: [Subject.History],
     },
     "6206": {
         type: RoomType.ClassRoom,
@@ -394,6 +411,8 @@ const b6000 = {
     },
     "6222": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Padgett"],
+        subjects: [Subject.English],
     },
     "6227": {
         type: RoomType.ClassRoom,

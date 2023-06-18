@@ -16,7 +16,7 @@
         subjectInfo = subjectDict[room.subjects[0]];
     }
 
-    let color = subjectInfo.color;
+    let color = subjectInfo?.color || "gray";
     let displayText = room?.nickname || id;
 
     if (room?.type === RoomType.BoyRestRoom || room?.type === RoomType.GirlRestRoom || room?.type === RoomType.AdminRestRoom || room?.type === RoomType.UnisexRestRoom) {
