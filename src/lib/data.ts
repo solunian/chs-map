@@ -28,7 +28,9 @@ const b100 = {
         subjects: [Subject.English],
     },
     "108": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Bui"],
+        subjects: [Subject.Special],
     },
     "109": {
         type: RoomType.ClassRoom
@@ -44,8 +46,6 @@ const b100 = {
     },
     "116": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Bui"],
-        subjects: [Subject.Special],
     },
     "office_100": {
         type: RoomType.AdminRoom,
