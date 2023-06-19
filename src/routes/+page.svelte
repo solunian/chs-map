@@ -10,6 +10,7 @@
     import Header from "$lib/components/Header.svelte";
     import BldgSeven from "$lib/components/BldgSeven.svelte";
     import BldgEight from "$lib/components/BldgEight.svelte";
+    import BldgMain from "$lib/components/BldgMain.svelte";
 </script>
 
 
@@ -25,5 +26,8 @@
 <BldgFive/>
 <BldgSeven/>
 <BldgEight/>
+
+<BldgMain/>
+
 
 

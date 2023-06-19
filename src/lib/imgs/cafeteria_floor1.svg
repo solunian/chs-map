@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 450 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-852.257,0)">
+        <g id="Cafeteria-Floor-1" serif:id="Cafeteria Floor 1" transform="matrix(0.797824,0,0,0.775545,125.083,-809.972)">
+            <rect x="911.447" y="1044.39" width="563.139" height="927.704" style="fill:none;"/>
+            <g>
+                <g transform="matrix(1.25341,0,0,1.28942,-1399.18,27.3432)">
+                    <rect x="1849.8" y="857.763" width="382.03" height="642.959" style="fill:rgb(238,238,238);"/>
+                </g>
+                <g transform="matrix(1.25341,0,0,1.28942,-1399.18,27.3432)">
+                    <rect x="1987.25" y="793.316" width="297.247" height="233.085" style="fill:rgb(238,238,238);"/>
+                </g>
+            </g>
+        </g>
+        <g id="to-be-deleted-2nd-story" serif:id="to be deleted 2nd story">
+        </g>
+    </g>
+</svg>

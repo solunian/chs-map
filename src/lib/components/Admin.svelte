@@ -14,7 +14,7 @@
                 <clipPath id="_clip1">
                     <rect id="Admin1" x="3347.12" y="517.962" width="449.894" height="799.979"/>
                 </clipPath>
-                <g clip-path="url(#_clip1)" on:click={clickAdmin} on:keydown >
+                <g clip-path="url(#_clip1)">
                     <g id="Admin2" transform="matrix(1.06048,0,0,1.00655,2468.98,-592.986)">
                         <g transform="matrix(1.39099,0,0,1,-1997.79,359.033)">
                             <path d="M2266.64,1194.82L2030.92,1194.82L2030.92,1474.66C2030.92,1511.07 2052.14,1540.58 2078.32,1540.58C2147.15,1540.58 2266.64,1540.58 2266.64,1540.58L2266.64,1194.82Z" />

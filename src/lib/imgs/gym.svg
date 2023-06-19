@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 505 774" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-2737.87,-577.847)">
+        <g id="Gym" transform="matrix(0.656187,0,0,1.14301,2045.33,705.863)">
+            <rect x="1055.4" y="-112" width="768.789" height="676.864" style="fill:none;"/>
+            <g transform="matrix(6.34982,0,0,3.64536,-4395.01,-3284.79)">
+                <path d="M978.419,873.699C978.419,872.142 977.157,870.88 975.6,870.88C959.456,870.88 878.886,870.88 862.454,870.88C861.677,870.88 860.932,871.188 860.383,871.738C859.833,872.287 859.525,873.032 859.525,873.809C859.525,892.28 859.525,992.449 859.525,1010.92C859.525,1011.7 859.833,1012.44 860.383,1012.99C860.932,1013.54 861.677,1013.85 862.454,1013.85C878.904,1013.85 959.629,1013.85 975.651,1013.85C977.18,1013.85 978.419,1012.61 978.419,1011.08L978.419,873.699Z" style="fill:rgb(235,235,235);"/>
+            </g>
+            <g transform="matrix(6.53603,0,0,3.64536,-4821.55,-3284.91)">
+                <ellipse cx="958.006" cy="1011.65" rx="40.549" ry="43.816" style="fill:rgb(235,235,235);"/>
+            </g>
+        </g>
+        <g id="to-be-deleted-2nd-story" serif:id="to be deleted 2nd story">
+        </g>
+    </g>
+</svg>

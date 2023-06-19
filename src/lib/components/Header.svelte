@@ -8,7 +8,7 @@
 
 
 <!-- CUPERTINO HIGH SCHOOL HEADER -->
-<header class="fixed inline left-6 rounded-b-xl text-3xl bg-amber-200 font-bold pt-4 pb-3 px-5 text-rose-700 z-20">
+<header class="fixed inline left-6 rounded-b-xl text-3xl bg-amber-200 font-bold pt-4 pb-3 px-5 text-rose-700 z-30">
     <div class="flex flex-row content-center gap-3">
         {#if $windowWidth <= MD_BREAKPOINT}
         CHS Map
