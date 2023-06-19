@@ -1,42 +1,31 @@
 <script lang="ts">
     import { MD_BREAKPOINT } from "$lib/constants";
     import { isSecondFloorVisible, windowWidth } from "$lib/stores";
-    import { onMount } from "svelte";
-
-    let checked: boolean;
-    setInterval(() => {
-        isSecondFloorVisible.set(checked);
-    });
-
-    let right 
-    if ($windowWidth <= MD_BREAKPOINT) {
-        
-    }
 </script>
 
 {#if $windowWidth <= MD_BREAKPOINT}
-<div class="fixed top-5 right-24 w-11 h-7 text-center">
+<div class="fixed top-5 right-24 w-11 h-7 text-center z-20">
 
     <label class="switch">
-        <input type="checkbox" bind:checked/>
+        <input type="checkbox" bind:checked={$isSecondFloorVisible}/>
         <span class="slider round"></span>
     </label>
 
-    {#if !checked}
+    {#if !$isSecondFloorVisible}
         <h3 class="text-sm relative w-20 mt-2 text-gray-500 -translate-x-4">1st floor</h3>
     {:else}
         <h3 class="text-sm relative w-20 mt-2 text-sky-500 -translate-x-4">2nd floor</h3>
     {/if}
 </div>
 {:else}
-<div class="fixed top-5 right-44 w-11 h-7 text-center">
+<div class="fixed top-5 right-44 w-11 h-7 text-center z-20">
 
     <label class="switch">
-        <input type="checkbox" bind:checked/>
+        <input type="checkbox" bind:checked={$isSecondFloorVisible}/>
         <span class="slider round"></span>
     </label>
 
-    {#if !checked}
+    {#if !$isSecondFloorVisible}
         <h3 class="text-sm relative w-20 mt-2 text-gray-500 -translate-x-4">1st floor</h3>
     {:else}
         <h3 class="text-sm relative w-20 mt-2 text-sky-500 -translate-x-4">2nd floor</h3>
