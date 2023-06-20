@@ -3,6 +3,9 @@
 ## Contributing
 If you find some information missing on the website, you can add an issue to this repo. Or... you can fork this repo, edit the `src/lib/data.ts` file, and submit a pull request.
 
+## Improvements
+I have no further desire to extend this, so the only changes will be for maintenance/updating data.
+
 ## Tools & Resources Used
 - Sveltekit: glorious components, routing, state management, etc.
 - Tailwindcss: brilliantly streamlined styling
