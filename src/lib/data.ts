@@ -1,6 +1,7 @@
 import type { Data } from "$lib/types";
 import { RoomType, Subject } from "$lib/types";
 import { o2m } from "$lib/helper";
+import moment from "moment";
 
 
 const b100 = {
@@ -599,7 +600,7 @@ const bMisc = {
 };
 
 const data: Data = {
-    last_update_year: 2023,
+    last_updated: moment("6-20-2023", "MM-DD-YYYY"),
     github_link: "https://github.com/solunian/chs-map",
     rooms: new Map([
         ...o2m(b100),

@@ -1,3 +1,5 @@
+import type { Moment } from "moment";
+
 export type ID = string;
 export enum RoomType {
     ClassRoom,
@@ -30,11 +32,10 @@ export interface Room {
     name?: string;
     staff?: string[];
     subjects?: Subject[];
-    desc?: string;
 }
 
 export interface Data {
-    last_update_year: number;
+    last_updated: Moment;
     github_link: string;
     rooms: Map<ID, Room>;
 }
