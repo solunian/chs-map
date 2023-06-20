@@ -17,10 +17,14 @@
             <h1>Notes</h1>
         </div>
 
+        <h2 class="text-sm">
+            created by: Daniel Cui
+        </h2>
+        
         <h2 class="text-sm pb-4 text-amber-800">
             last updated: {data.last_updated.format("MMM Do, YYYY")}
         </h2>
-        
+
         <p>
             Well, hello there! This is a map for Cupertino High School.
             I hope students get a bit of use of this; otherwise, it'd be a little sad.
