@@ -18,7 +18,9 @@ const b100 = {
         type: RoomType.ClassRoom
     },
     "105": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Stavis"],
+        subjects: [Subject.Special],
     },
     "106": {
         type: RoomType.ClassRoom
@@ -77,6 +79,8 @@ const b200 = {
     },
     "208": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Nguyen"],
+        subjects: [Subject.History],
     },
     "210": {
         type: RoomType.ClassRoom,
@@ -84,7 +88,9 @@ const b200 = {
         subjects: [Subject.English],
     },
     "211": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Masuda"],
+        subjects: [Subject.English],
     },
     "212": {
         type: RoomType.ClassRoom
@@ -194,18 +200,18 @@ const b400 = {
         subjects: [Subject.Math]
     },
     "419": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Stubbs"],
+        subjects: [Subject.Math],
     },
     "420": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Tsai"],
-        subjects: [Subject.Math]
     },
 };
 const b500 = {
     "501": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Mitchell"],
+        staff: ["Mr. Stavis", "Mr. Mitchell"],
         subjects: [Subject.Science],
     },
     "502": {
@@ -239,7 +245,9 @@ const b500 = {
         subjects: [Subject.Science],
     },
     "508": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        displayName: "508",
+        name: "508: Empty Room",
     },
     "509": {
         type: RoomType.ClassRoom,
@@ -263,8 +271,8 @@ const b700 = {
     },
     "703": {
         type: RoomType.MultiPurposeRoom,
-        displayName: "Guard/ Noise???",
-        name: "703: Color Guard Room/Percussion Room???",
+        displayName: "Pit Room",
+        name: "703: Pit Room",
         subjects: [Subject.Music],
     },
     "708": {
@@ -282,6 +290,8 @@ const b700 = {
     },
     "722": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Filice"],
+        subjects: [Subject.English],
     },
     "723": {
         type: RoomType.ClassRoom,
@@ -304,6 +314,8 @@ const b700 = {
 const b800 = {
     "802": {
         type: RoomType.ClassRoom,
+        staff: ["Mr. Aron"],
+        subjects: [Subject.Music, Subject.Art]
     },
     "804": {
         type: RoomType.ClassRoom,
@@ -492,6 +504,8 @@ const b7000 = {
     },
     "7103": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Kuehn"],
+        subjects: [Subject.Science],
     },
     "7201": {
         type: RoomType.ClassRoom,
