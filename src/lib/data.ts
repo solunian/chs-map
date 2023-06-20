@@ -1,6 +1,6 @@
-import type { Data } from "./types";
-import { RoomType, Subject } from "./types";
-import { o2m } from "./helper";
+import type { Data } from "$lib/types";
+import { RoomType, Subject } from "$lib/types";
+import { o2m } from "$lib/helper";
 
 
 const b100 = {
@@ -49,7 +49,7 @@ const b100 = {
     },
     "office_100": {
         type: RoomType.AdminRoom,
-        nickname: "office",
+        name: "office",
     }
 };
 const b200 = {
@@ -71,6 +71,8 @@ const b200 = {
     },
     "206-7": {
         type: RoomType.ClassRoom,
+        displayName: "206-7",
+        name: "Room 206/207"
     },
     "208": {
         type: RoomType.ClassRoom,
@@ -138,11 +140,11 @@ const b300 = {
     },
     "office_300": {
         type: RoomType.AdminRoom,
-        nickname: "office",
+        name: "office",
     },
     "staff_lounge": {
         type: RoomType.AdminRoom,
-        nickname: "Teachers' Lounge",
+        name: "Teachers' Lounge",
     },
 };
 const b400 = {
@@ -222,7 +224,8 @@ const b500 = {
     },
     "505": {
         type: RoomType.AdminRoom,
-        nickname: "Staff Room",
+        displayName: "Staff Room",
+        name: "505: Staff Room",
     },
     "506": {
         type: RoomType.ClassRoom,
@@ -246,18 +249,21 @@ const b500 = {
 const b700 = {
     "701": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "closet",
+        displayName: "closet",
+        name: "701: Band Closet",
         subjects: [Subject.Music],
     },
     "702": {
         type: RoomType.ClassRoom,
-        nickname: "Band Room",
+        displayName: "Band Room",
+        name: "702: Band Room",
         staff: ["Mr. Scharf"],
         subjects: [Subject.Music],
     },
     "703": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Color Guard",
+        displayName: "Color Guard",
+        name: "703: Color Guard Room",
         subjects: [Subject.Music],
     },
     "708": {
@@ -281,15 +287,16 @@ const b700 = {
     },
     "724": {
         type: RoomType.AdminRoom,
-        nickname: "ASB",
+        displayName: "ASB",
+        name: "724: ASB Office",
         staff: ["Ms. Nguyen"]
     },
     "brr_700": {
-        nickname: "Boys' Restroom",
+        name: "Boys' Restroom",
         type: RoomType.BoyRestRoom,
     },
     "grr_700": {
-        nickname: "Girls' Restroom",
+        name: "Girls' Restroom",
         type: RoomType.GirlRestRoom,
     },
 };
@@ -308,11 +315,11 @@ const b800 = {
     },
     "brr_800": {
         type: RoomType.BoyRestRoom,
-        nickname: "Boys' Restroom",
+        name: "Boys' Restroom",
     },
     "grr_800": {
         type: RoomType.GirlRestRoom,
-        nickname: "Girls' Restroom",
+        name: "Girls' Restroom",
     }
 };
 const b900 = {
@@ -446,27 +453,27 @@ const b6000 = {
         subjects: [Subject.English],
     },
     "brr_6000_1": {
-        nickname: "Boys' Restroom",
+        name: "Boys' Restroom",
         type: RoomType.BoyRestRoom,
     },
     "grr_6000_1": {
-        nickname: "Girls' Restroom",
+        name: "Girls' Restroom",
         type: RoomType.GirlRestRoom,
     },
     "arr_6000_1": {
-        nickname: "Staff Restroom",
+        name: "Staff Restroom",
         type: RoomType.AdminRestRoom,
     },
     "brr_6000_2": {
-        nickname: "Boys' Restroom",
+        name: "Boys' Restroom",
         type: RoomType.BoyRestRoom,
     },
     "grr_6000_2": {
-        nickname: "Girls' Restroom",
+        name: "Girls' Restroom",
         type: RoomType.GirlRestRoom,
     },
     "arr_6000_2": {
-        nickname: "Staff Restroom",
+        name: "Staff Restroom",
         type: RoomType.AdminRestRoom,
     },
 };
@@ -501,76 +508,76 @@ const b7000 = {
 const bMain = {
     "cafeteria": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Cafeteria",
+        name: "Cafeteria",
     },
     "mezzanine": {
         type: RoomType.RecArea,
-        nickname: "Mezzanine",
+        name: "Mezzanine",
     },
     "ccc": {
         type: RoomType.AdminRoom,
-        nickname: "College and Career Center",
+        name: "College and Career Center",
     },
     "main_office": {
         type: RoomType.AdminRoom,
-        nickname: "Main Office",
+        name: "Main Office",
     },
     "library": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Library",
+        name: "Library",
     },
     "1214": {
         type: RoomType.ClassRoom,
     },
     "1215": {
         type: RoomType.ClassRoom,
-        nickname: "Computer Lab",
+        name: "Computer Lab",
     },
     
 };
 const bMisc = {
     "theater": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Theater",
+        name: "Theater",
         subjects: [Subject.Music, Subject.Art],
     },
     "wagon_wheel": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Wagon Wheel",
+        name: "Wagon Wheel",
     },
     "gym": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Gym",
+        name: "Gym",
         subjects: [Subject.PE],
     },
     "dance_studio": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Dance Studio",
+        name: "Dance Studio",
         subjects: [Subject.PE],
     },
     "g_lockers": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Girls' Lockers",
+        name: "Girls' Lockers",
         subjects: [Subject.PE],
     },
     "mat_room": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Mat Room",
+        name: "Mat Room",
         subjects: [Subject.PE],
     },
     "b_lockers": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Boys' Lockers",
+        name: "Boys' Lockers",
         subjects: [Subject.PE],
     },
     "weight_room": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Weight Room",
+        name: "Weight Room",
         subjects: [Subject.PE],
     },
     "field_house": {
         type: RoomType.MultiPurposeRoom,
-        nickname: "Field House",
+        name: "Field House",
         subjects: [Subject.PE],
     },
 };

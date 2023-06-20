@@ -26,7 +26,8 @@ export enum Subject {
 
 export interface Room {
     type: RoomType;
-    nickname?: string;
+    displayName?: string;
+    name?: string;
     staff?: string[];
     subjects?: Subject[];
     desc?: string;

@@ -3,8 +3,8 @@
     import data from "$lib/data";
     import { defaultSubjectInfo, subjectDict, getNormalColor, getHoverColor, formatTeacherList } from "$lib/helper";
     import { onMount } from "svelte";
-    import RoomTypePill from "./RoomTypePill.svelte";
-    import SubjectPill from "./SubjectPill.svelte";
+    import RoomTypePill from "$lib/components/RoomTypePill.svelte";
+    import SubjectPill from "$lib/components/SubjectPill.svelte";
 
     export let x: number, y: number, w: number, h: number, id: string;
 
@@ -17,14 +17,14 @@
     }
 
     let color = subjectInfo?.color || "gray";
-    let displayText = room?.nickname || id;
+    let displayName = room?.displayName || room?.name || id;
 
     if (room?.type === RoomType.BoyRestRoom || room?.type === RoomType.GirlRestRoom || room?.type === RoomType.AdminRestRoom || room?.type === RoomType.UnisexRestRoom) {
-        displayText = "🚽";
+        displayName = "🚽";
         color = "stone";
     } 
 
-    let tooltipRoomText = room?.nickname || "Room " + id;
+    let tooltipRoomText = room?.name || "Room " + id;
     let tooltipTeachersText = formatTeacherList(room?.staff);
     
     let normalColor = getNormalColor(color);
@@ -47,7 +47,7 @@
     on:mouseover={(e) => e.currentTarget.style.backgroundColor = hoverColor} 
     on:mouseleave={(e) => e.currentTarget.style.backgroundColor = normalColor} on:focus>
         
-        <h2 class="text-md leading-5">{displayText}</h2>
+        <h2 class="text-md leading-5">{displayName}</h2>
         
     </div>
 
