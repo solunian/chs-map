@@ -5,9 +5,8 @@
     import RoomTypePill from "$lib/components/RoomTypePill.svelte";
     import { RoomType } from "$lib/types";
     import SubjectPill from "$lib/components/SubjectPill.svelte";
-    import Rect from "../Rect.svelte";
 
-    let x = 592, y = 815, w = 125, h = 200, id = "cafeteria"; // h is the offset for the tooltip now
+    let x = 592, y = 913, w = 245, h = 85, id = "library"; // h is the offset for the tooltip now
 
     const room = data.rooms.get(id);
     let subjectInfo;
@@ -42,11 +41,12 @@
 <div class="absolute transition text-center inline-block z-0" style="left: {x}px; top: {y}px; 
 transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%, {scaleValue}%);">
     <div>
-        <svg style="width: {w};" viewBox="0 0 450 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-            <g transform="matrix(1,0,0,1,-852.257,0)">
-                <g transform="matrix(0.797824,0,0,0.775545,125.083,-809.972)">
-                    <rect x="911.447" y="1044.39" width="563.139" height="927.704" style="fill:none;"/>
-                    
+
+        <svg width={w} viewBox="0 0 1041 345" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+            <g transform="matrix(1,0,0,1,-620.049,-951.059)">
+                <g id="Library" transform="matrix(0.934808,0,0,0.669962,1343.37,303.616)">
+                    <rect x="-773.759" y="966.389" width="1113.23" height="514.828" style="fill:none;"/>
+
                     <g class="svg" style="fill: {normalColor}; outline: none;"
                     on:mouseover={(e) => {
                         e.currentTarget.style.fill = hoverColor;
@@ -60,18 +60,28 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
                         scaleValue = 100;
                         isHovering = false;
                     }} on:focus>
-                        <g transform="matrix(1.25341,0,0,1.10746,-1399.18,300.405)">
-                            <path d="M2231.83,857.763L1867.51,857.763C1857.73,857.763 1849.8,866.998 1849.8,878.39L1849.8,1480.09C1849.8,1491.49 1857.73,1500.72 1867.51,1500.72L2214.11,1500.72C2223.89,1500.72 2231.83,1491.49 2231.83,1480.09L2231.83,857.763Z"/>
-                        </g>
-                        <g transform="matrix(1.25341,0,0,1.28942,-1399.18,27.3432)">
-                            <path d="M2284.5,811.032C2284.5,806.334 2282.63,801.827 2279.31,798.505C2275.99,795.182 2271.48,793.316 2266.78,793.316L2004.97,793.316C2000.27,793.316 1995.76,795.182 1992.44,798.505C1989.12,801.827 1987.25,806.334 1987.25,811.032L1987.25,1008.69C1987.25,1013.38 1989.12,1017.89 1992.44,1021.21C1995.76,1024.54 2000.27,1026.4 2004.97,1026.4L2266.78,1026.4C2271.48,1026.4 2275.99,1024.54 2279.31,1021.21C2282.63,1017.89 2284.5,1013.38 2284.5,1008.69L2284.5,811.032Z"/>
+                        <g transform="matrix(1.06974,0,0,1.49262,-2404.97,-1419.02)">
+                            <g transform="matrix(2.63577,0,0,1,255.646,441.58)">
+                                <path d="M874.023,1262.01C874.023,1252.23 871.014,1244.29 867.301,1244.29C827.83,1244.29 627.903,1244.29 627.903,1244.29L627.903,1410.81L874.023,1410.81L874.023,1262.01Z" />
+                            </g>
+                            <g transform="matrix(1.19407,0,0,0.466531,1235.17,1241.81)">
+                                <path d="M638.136,896.432C638.136,886.361 636.572,876.701 633.79,869.58C631.007,862.458 627.234,858.457 623.299,858.457C551.684,858.457 245.198,858.457 245.198,858.457L245.198,1462.08C245.198,1472.15 246.761,1481.81 249.544,1488.93C252.326,1496.06 256.1,1500.06 260.035,1500.06C322.176,1500.06 561.158,1500.06 623.299,1500.06C627.234,1500.06 631.007,1496.06 633.79,1488.93C636.572,1481.81 638.136,1472.15 638.136,1462.08C638.136,1348.19 638.136,1010.33 638.136,896.432Z" />
+                            </g>
+                            <g transform="matrix(0.891409,0,0,0.607734,233.907,917.312)">
+                                <path d="M1605.57,1152.75C1605.57,1145.02 1603.48,1137.6 1599.75,1132.13C1596.03,1126.67 1590.97,1123.6 1585.7,1123.6C1556.28,1123.6 1501.47,1123.6 1472.06,1123.6C1466.79,1123.6 1461.73,1126.67 1458,1132.13C1454.28,1137.6 1452.18,1145.02 1452.18,1152.75C1452.18,1177.99 1452.18,1210.48 1452.18,1210.48L1605.57,1210.48L1605.57,1152.75Z" />
+                            </g>
+                            <g transform="matrix(0.903425,0,0,1,626.21,443.083)">
+                                <path d="M2140.16,1341.37L2034.82,1341.37L2034.82,1481.11C2034.82,1490.89 2043.6,1498.82 2054.43,1498.82C2073.3,1498.82 2101.68,1498.82 2120.55,1498.82C2131.38,1498.82 2140.16,1490.89 2140.16,1481.11C2140.16,1439.95 2140.16,1341.37 2140.16,1341.37Z" />
+                            </g>
                         </g>
                     </g>
                 </g>
             </g>
         </svg>
         
-        <h2 class="fixed text-md leading-5 pointer-events-none" style="transform: translate(20px, -{h / 2}px);">{displayName}</h2>
+        
+        
+        <h2 class="fixed text-md leading-5 pointer-events-none" style="transform: translate(100px, -{h / 2 + 8}px);">{displayName}</h2>
     </div>
 
     <div id="tooltip" class="pointer-events-none" bind:clientWidth={tooltipWidth}
@@ -90,10 +100,6 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
         </div>
     </div>
 </div>
-
-
-<Rect id="brr_cafeteria" x={572} y={827} w={25} h={25}/>
-<Rect id="grr_cafeteria" x={601} y={827} w={25} h={25}/>
 
 
 <style>

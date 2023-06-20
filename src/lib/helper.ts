@@ -8,7 +8,7 @@ interface SubjectInfo {
 }
 
 // lol this an javascript array acting as a dictionary
-export let subjectDict: SubjectInfo[] = [];
+export const subjectDict: SubjectInfo[] = [];
 // all the subject color definitions
 {
     subjectDict[Subject.Art] = {
@@ -83,12 +83,18 @@ export const formatTeacherList = (teacherArr: string[] | undefined) => {
         return "anarchy?";
     } else if (teacherArr.length === 1) {
         return teacherArr[0];
-    } else {
+    } else if (teacherArr.length <= 3) {
         let result = "";
         for (let i = 0; i < teacherArr.length - 1; i++) {
             result += teacherArr[i] + ", ";
         }
-        return result + teacherArr[teacherArr.length - 1];
+        return result + teacherArr[teacherArr.length - 1]; 
+    }   else {
+        let result = "";
+        for (let i = 0; i < 2; i++) {
+            result += teacherArr[i] + ", ";
+        }
+        return result + teacherArr[2] + "...";
     }
 }
 

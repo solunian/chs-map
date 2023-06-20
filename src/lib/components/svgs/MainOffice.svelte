@@ -5,9 +5,8 @@
     import RoomTypePill from "$lib/components/RoomTypePill.svelte";
     import { RoomType } from "$lib/types";
     import SubjectPill from "$lib/components/SubjectPill.svelte";
-    import Rect from "../Rect.svelte";
 
-    let x = 592, y = 815, w = 125, h = 200, id = "cafeteria"; // h is the offset for the tooltip now
+    let x = 812, y = 850, w = 127, h = 165, id = "main_office"; // h is the offset for the tooltip now
 
     const room = data.rooms.get(id);
     let subjectInfo;
@@ -38,14 +37,13 @@
     let isHovering = false;
 </script>
 
-
 <div class="absolute transition text-center inline-block z-0" style="left: {x}px; top: {y}px; 
 transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%, {scaleValue}%);">
     <div>
-        <svg style="width: {w};" viewBox="0 0 450 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-            <g transform="matrix(1,0,0,1,-852.257,0)">
-                <g transform="matrix(0.797824,0,0,0.775545,125.083,-809.972)">
-                    <rect x="911.447" y="1044.39" width="563.139" height="927.704" style="fill:none;"/>
+        <svg style="width: {w};" viewBox="0 0 425 545" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+            <g transform="matrix(1,0,0,1,-2073.76,-1181.02)">
+                <g id="Office" transform="matrix(0.942968,0,0,0.681205,-1082.46,828.182)">
+                    <rect x="3347.12" y="517.962" width="449.894" height="799.979" style="fill:none;"/>
                     
                     <g class="svg" style="fill: {normalColor}; outline: none;"
                     on:mouseover={(e) => {
@@ -60,18 +58,39 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
                         scaleValue = 100;
                         isHovering = false;
                     }} on:focus>
-                        <g transform="matrix(1.25341,0,0,1.10746,-1399.18,300.405)">
-                            <path d="M2231.83,857.763L1867.51,857.763C1857.73,857.763 1849.8,866.998 1849.8,878.39L1849.8,1480.09C1849.8,1491.49 1857.73,1500.72 1867.51,1500.72L2214.11,1500.72C2223.89,1500.72 2231.83,1491.49 2231.83,1480.09L2231.83,857.763Z"/>
-                        </g>
-                        <g transform="matrix(1.25341,0,0,1.28942,-1399.18,27.3432)">
-                            <path d="M2284.5,811.032C2284.5,806.334 2282.63,801.827 2279.31,798.505C2275.99,795.182 2271.48,793.316 2266.78,793.316L2004.97,793.316C2000.27,793.316 1995.76,795.182 1992.44,798.505C1989.12,801.827 1987.25,806.334 1987.25,811.032L1987.25,1008.69C1987.25,1013.38 1989.12,1017.89 1992.44,1021.21C1995.76,1024.54 2000.27,1026.4 2004.97,1026.4L2266.78,1026.4C2271.48,1026.4 2275.99,1024.54 2279.31,1021.21C2282.63,1017.89 2284.5,1013.38 2284.5,1008.69L2284.5,811.032Z"/>
+
+                        <clipPath id="_clip1">
+                            <rect x="3347.12" y="517.962" width="449.894" height="799.979"/>
+                        </clipPath>
+                        <g clip-path="url(#_clip1)">
+                            <g id="Admin" transform="matrix(1.06048,0,0,1.46799,2468.98,-1469.03)">
+                                <clipPath id="_clip2">
+                                    <rect x="827.216" y="1355.14" width="425.799" height="544.47"/>
+                                </clipPath>
+                                <g clip-path="url(#_clip2)">
+                                    <g transform="matrix(1.39099,0,0,1,-1997.79,359.033)">
+                                        <path d="M2266.64,1194.82L2043.66,1194.82C2036.63,1194.82 2030.92,1202.76 2030.92,1212.54C2030.92,1271.92 2030.92,1463.49 2030.92,1522.87C2030.92,1532.65 2036.63,1540.58 2043.66,1540.58C2084.66,1540.58 2212.9,1540.58 2253.9,1540.58C2260.93,1540.58 2266.64,1532.65 2266.64,1522.87L2266.64,1194.82Z"/>
+                                    </g>
+                                    <g transform="matrix(0.843371,0,0,1.01522,-842.443,152.589)">
+                                        <path d="M2483.66,1310.28L2083.78,1310.28L2083.78,1486.5L2462.7,1486.5C2474.27,1486.5 2483.66,1478.71 2483.66,1469.09C2483.66,1424.61 2483.66,1310.28 2483.66,1310.28Z" />
+                                    </g>
+                                    <g transform="matrix(1.2027,0,0,1.33112,-1570.88,-235.559)">
+                                        <path d="M2266.64,1194.82L2045.65,1194.82C2037.52,1194.82 2030.92,1200.78 2030.92,1208.13C2030.92,1271.62 2030.92,1540.58 2030.92,1540.58L2266.64,1540.58L2266.64,1194.82Z"/>
+                                    </g>
+                                    <g transform="matrix(1,0,0,1,-1244.15,171.608)">
+                                        <path d="M2496.5,1200.88C2496.5,1191.1 2488.57,1183.17 2478.79,1183.17L2266.93,1183.17L2266.93,1391.46L2496.5,1391.46L2496.5,1200.88Z" />
+                                    </g>
+                                </g>
+                            </g>
                         </g>
                     </g>
                 </g>
             </g>
         </svg>
         
-        <h2 class="fixed text-md leading-5 pointer-events-none" style="transform: translate(20px, -{h / 2}px);">{displayName}</h2>
+
+
+        <h2 class="fixed text-md leading-5 pointer-events-none" style="transform: translate(25px, -{h / 2 + 20}px);">{displayName}</h2>
     </div>
 
     <div id="tooltip" class="pointer-events-none" bind:clientWidth={tooltipWidth}
@@ -90,10 +109,6 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
         </div>
     </div>
 </div>
-
-
-<Rect id="brr_cafeteria" x={572} y={827} w={25} h={25}/>
-<Rect id="grr_cafeteria" x={601} y={827} w={25} h={25}/>
 
 
 <style>
@@ -117,7 +132,7 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
     }
 
     #tooltip {
-        @apply invisible bg-black text-white text-center z-10;
+        @apply invisible bg-black text-white text-center z-20;
         @apply absolute whitespace-nowrap;
         @apply rounded-md py-3 px-3;
     }

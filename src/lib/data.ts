@@ -262,8 +262,8 @@ const b700 = {
     },
     "703": {
         type: RoomType.MultiPurposeRoom,
-        displayName: "Color Guard",
-        name: "703: Color Guard Room",
+        displayName: "Guard/ Noise???",
+        name: "703: Color Guard Room/Percussion Room???",
         subjects: [Subject.Music],
     },
     "708": {
@@ -325,6 +325,7 @@ const b800 = {
 const b900 = {
     "905": {
         type: RoomType.ClassRoom,
+        subjects: [Subject.Art]
     },
     "906": {
         type: RoomType.ClassRoom,
@@ -368,6 +369,8 @@ const b6000 = {
     },
     "6105": {
         type: RoomType.ClassRoom,
+        displayName: "6105",
+        name: "Robotics & Engineering",
         subjects: [Subject.Special],
     },
     "6106": {
@@ -506,6 +509,14 @@ const b7000 = {
     },
 };
 const bMain = {
+    "brr_cafeteria": {
+        type: RoomType.BoyRestRoom,
+        name: "Boys' Restroom",
+    },
+    "grr_cafeteria": {
+        type: RoomType.GirlRestRoom,
+        name: "Girls' Restroom",
+    },
     "cafeteria": {
         type: RoomType.MultiPurposeRoom,
         name: "Cafeteria",
@@ -516,11 +527,14 @@ const bMain = {
     },
     "ccc": {
         type: RoomType.AdminRoom,
+        displayName: "CCC",
         name: "College and Career Center",
+        staff: ["Ms. Amick"],
     },
     "main_office": {
         type: RoomType.AdminRoom,
         name: "Main Office",
+        staff: ["Ms. Tomberlain"]
     },
     "library": {
         type: RoomType.MultiPurposeRoom,
@@ -531,6 +545,7 @@ const bMain = {
     },
     "1215": {
         type: RoomType.ClassRoom,
+        displayName: "1215",
         name: "Computer Lab",
     },
     
@@ -538,7 +553,8 @@ const bMain = {
 const bMisc = {
     "theater": {
         type: RoomType.MultiPurposeRoom,
-        name: "Theater",
+        displayName: "Theater",
+        name: "Robert B. Lopez Theater",
         subjects: [Subject.Music, Subject.Art],
     },
     "wagon_wheel": {

@@ -6,7 +6,7 @@
     import { RoomType } from "$lib/types";
     import SubjectPill from "$lib/components/SubjectPill.svelte";
 
-    let x = 470, y = 860, w = 120, h = 180, id = "theater"; // h is the offset for the tooltip now
+    let x = 945, y = 730, w = 150, h = 230, id = "gym"; // h is the offset for the tooltip now
 
     const room = data.rooms.get(id);
     let subjectInfo;
@@ -40,38 +40,40 @@
 <div class="absolute transition text-center inline-block z-0" style="left: {x}px; top: {y}px; 
 transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%, {scaleValue}%);">
     <div>
-        <svg style="width: {w};" viewBox="0 0 402 611" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-            <g transform="matrix(1,0,0,1,0,-824.938)">
-                <g transform="matrix(0.238599,0,0,0.606987,-225.997,-353.834)">
-                    <rect x="947.185" y="1942.01" width="1684.21" height="1006.15"/>
-        
+        <svg style="width: {w};" viewBox="0 0 505 774" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+            <g transform="matrix(1,0,0,1,-3584.59,-580.408)">
+                <g id="Gym" transform="matrix(0.656187,0,0,1.14301,2892.05,708.425)">
+                    <rect x="1055.4" y="-112" width="768.789" height="676.864" style="fill:none;"/>
+
                     <g class="svg" style="fill: {normalColor}; outline: none;"
-                        on:mouseover={(e) => {
-                            e.currentTarget.style.fill = hoverColor;
-                            translateValue = -4;
-                            scaleValue = 105;
-                            isHovering = true;
-                        }} 
-                        on:mouseleave={(e) => {
-                            e.currentTarget.style.fill = normalColor;
-                            translateValue = 0;
-                            scaleValue = 100;
-                            isHovering = false;
-                        }} on:focus>
-        
-                        <g transform="matrix(17.4631,0,0,6.86451,-8058.13,-4895.56)">
-                            <rect x="516.601" y="996.662" width="94.449" height="35.57"/>
+                    on:mouseover={(e) => {
+                        e.currentTarget.style.fill = hoverColor;
+                        translateValue = -4;
+                        scaleValue = 105;
+                        isHovering = true;
+                    }} 
+                    on:mouseleave={(e) => {
+                        e.currentTarget.style.fill = normalColor;
+                        translateValue = 0;
+                        scaleValue = 100;
+                        isHovering = false;
+                    }} on:focus>
+
+                        <g transform="matrix(6.34982,0,0,3.64536,-4395.01,-3284.79)">
+                            <path d="M978.419,875.132C978.419,872.783 976.516,870.88 974.167,870.88L863.777,870.88C861.428,870.88 859.525,872.783 859.525,875.132C859.525,896.131 859.525,988.6 859.525,1009.6C859.525,1011.95 861.428,1013.85 863.777,1013.85C882.278,1013.85 955.666,1013.85 974.167,1013.85C976.516,1013.85 978.419,1011.95 978.419,1009.6L978.419,875.132Z"/>
                         </g>
-                        <g transform="matrix(17.4631,0,0,6.86451,-8058.13,-4895.56)">
-                            <path d="M591.865,1019.21L527.031,1019.68L519.128,1139.17L559.008,1141.48L600.394,1138.86L591.865,1019.21Z"/>
+                        <g transform="matrix(6.53603,0,0,3.64536,-4821.55,-3284.91)">
+                            <ellipse cx="958.006" cy="1011.65" rx="40.549" ry="43.816"/>
                         </g>
-        
+
                     </g>
                 </g>
             </g>
-        
         </svg>
-        <h2 class="text-md leading-5 pointer-events-none" style="transform: translate(-4px, -{h / 2}px);">{displayName}</h2>
+        
+
+
+        <h2 class="fixed text-md leading-5 pointer-events-none" style="transform: translate(60px, -{h / 2 + 20}px);">{displayName}</h2>
     </div>
 
     <div id="tooltip" class="pointer-events-none" bind:clientWidth={tooltipWidth}
@@ -113,7 +115,7 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
     }
 
     #tooltip {
-        @apply invisible bg-black text-white text-center z-10;
+        @apply invisible bg-black text-white text-center z-20;
         @apply absolute whitespace-nowrap;
         @apply rounded-md py-3 px-3;
     }

@@ -12,8 +12,18 @@
     import BldgNine from "$lib/components/bldgs/BldgNine.svelte";
     import BldgThousands from "$lib/components/bldgs/BldgThousands.svelte";
     
-    import TheaterSvg from "$lib/components/svgs/TheaterSvg.svelte";
+    import Theater from "$lib/components/svgs/Theater.svelte";
     import CafeteriaF1 from "$lib/components/svgs/CafeteriaF1.svelte";
+    import CCC from "$lib/components/svgs/CCC.svelte";
+    import MainOffice from "$lib/components/svgs/MainOffice.svelte";
+    import Gym from "$lib/components/svgs/Gym.svelte";
+    import WagonWheel from "$lib/components/bldgs/WagonWheel.svelte";
+    import BldgPhysEd from "$lib/components/bldgs/BldgPhysEd.svelte";
+    import CafeteriaF2 from "$lib/components/svgs/CafeteriaF2.svelte";
+    import { isSecondFloorVisible } from "$lib/stores";
+    import Mezzanine from "$lib/components/svgs/Mezzanine.svelte";
+    import Library from "$lib/components/svgs/Library.svelte";
+    import BldgMain from "$lib/components/bldgs/BldgMain.svelte";
 </script>
 
 
@@ -31,8 +41,24 @@
 <BldgNine/>
 <BldgThousands/>
 
-<TheaterSvg/>
-<CafeteriaF1/>
+<Theater/>
+<Gym/>
+<WagonWheel/>
+<BldgPhysEd/>
+
+<!-- LOL THIS IS REALLY SCUFFED, ORDERING MATTERS BECAUSE Z-INDEXES GOT A LITTLE COMPLICATED FOR ME AND I'M LAZY SORRY BYE -->
+{#if !$isSecondFloorVisible}
+    <CafeteriaF1/>
+    <MainOffice/>
+    <CCC/>
+{:else}
+    <Library/>
+    <CafeteriaF2/>
+    <BldgMain/>
+    <Mezzanine/>
+{/if}
+
+
 
 
 
