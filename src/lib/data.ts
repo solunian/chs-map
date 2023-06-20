@@ -274,7 +274,7 @@ const b700 = {
         type: RoomType.ClassRoom,
         displayName: "Band Room",
         name: "702: Band Room",
-        staff: ["Mr. Iruegas, Mr. Scharf"],
+        staff: ["Mr. Iruegas", "Mr. Scharf"],
         subjects: [Subject.Music],
     },
     "703": {

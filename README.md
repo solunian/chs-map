@@ -9,6 +9,8 @@ If you find some information missing on the website, you can add an issue to thi
 - Heroicons: nice looking icons
 - Affinity Designer: to make the svgs
 - Vercel: deployment
+- moment.js: date formatting for last_updated
+- qrcode package on npm, made a qrcode for the vercel site at `resources/qrcode.png`
 - Doki Doki Literature Club Theme at `static/ddlc_theme.mp3`: cool music!
 - `CHSCampusPlan.pdf`: map reference
 
