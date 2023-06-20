@@ -95,13 +95,19 @@ const b200 = {
         subjects: [Subject.English, Subject.Special],
     },
     "212": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Purse"],
+        subjects: [Subject.Special],
     },
     "213": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Ray"],
+        subjects: [Subject.Language],
     },
     "214": {
-        type: RoomType.ClassRoom
+        type: RoomType.RecArea,
+        displayName: "214",
+        name: "Wellness Room",
     },
     "215": {
         type: RoomType.ClassRoom,
@@ -268,7 +274,7 @@ const b700 = {
         type: RoomType.ClassRoom,
         displayName: "Band Room",
         name: "702: Band Room",
-        staff: ["Mr. Scharf"],
+        staff: ["Mr. Iruegas, Mr. Scharf"],
         subjects: [Subject.Music],
     },
     "703": {
@@ -340,13 +346,18 @@ const b800 = {
 const b900 = {
     "905": {
         type: RoomType.ClassRoom,
-        subjects: [Subject.Art]
+        staff: ["Ms. Conrad"],
+        subjects: [Subject.Art],
     },
     "906": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Conrad"],
+        subjects: [Subject.Art],
     },
     "910": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Conrad"],
+        subjects: [Subject.Art],
     },
     "911": {
         type: RoomType.ClassRoom,
