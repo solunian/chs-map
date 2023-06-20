@@ -49,6 +49,8 @@ const b100 = {
     },
     "116": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Phelps"],
+        subjects: [Subject.English, Subject.Special],
     },
     "office_100": {
         type: RoomType.AdminRoom,
@@ -90,7 +92,7 @@ const b200 = {
     "211": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Masuda"],
-        subjects: [Subject.English],
+        subjects: [Subject.English, Subject.Special],
     },
     "212": {
         type: RoomType.ClassRoom
@@ -584,7 +586,7 @@ const bMisc = {
     "dance_studio": {
         type: RoomType.MultiPurposeRoom,
         name: "Dance Studio",
-        subjects: [Subject.PE],
+        subjects: [Subject.Art, Subject.PE],
     },
     "g_lockers": {
         type: RoomType.MultiPurposeRoom,
