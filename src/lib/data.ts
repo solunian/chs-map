@@ -18,7 +18,9 @@ const b100 = {
         type: RoomType.ClassRoom
     },
     "105": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Stavis"],
+        subjects: [Subject.Special],
     },
     "106": {
         type: RoomType.ClassRoom
@@ -47,6 +49,8 @@ const b100 = {
     },
     "116": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Phelps"],
+        subjects: [Subject.English, Subject.Special],
     },
     "office_100": {
         type: RoomType.AdminRoom,
@@ -77,6 +81,8 @@ const b200 = {
     },
     "208": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Nguyen"],
+        subjects: [Subject.History],
     },
     "210": {
         type: RoomType.ClassRoom,
@@ -84,16 +90,24 @@ const b200 = {
         subjects: [Subject.English],
     },
     "211": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Masuda"],
+        subjects: [Subject.English, Subject.Special],
     },
     "212": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Purse"],
+        subjects: [Subject.Special],
     },
     "213": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Ray"],
+        subjects: [Subject.Language],
     },
     "214": {
-        type: RoomType.ClassRoom
+        type: RoomType.RecArea,
+        displayName: "214",
+        name: "Wellness Room",
     },
     "215": {
         type: RoomType.ClassRoom,
@@ -194,18 +208,18 @@ const b400 = {
         subjects: [Subject.Math]
     },
     "419": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Stubbs"],
+        subjects: [Subject.Math],
     },
     "420": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Tsai"],
-        subjects: [Subject.Math]
     },
 };
 const b500 = {
     "501": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Mitchell"],
+        staff: ["Mr. Stavis", "Mr. Mitchell"],
         subjects: [Subject.Science],
     },
     "502": {
@@ -239,7 +253,9 @@ const b500 = {
         subjects: [Subject.Science],
     },
     "508": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        displayName: "508",
+        name: "508: Empty Room",
     },
     "509": {
         type: RoomType.ClassRoom,
@@ -258,13 +274,13 @@ const b700 = {
         type: RoomType.ClassRoom,
         displayName: "Band Room",
         name: "702: Band Room",
-        staff: ["Mr. Scharf"],
+        staff: ["Mr. Iruegas, Mr. Scharf"],
         subjects: [Subject.Music],
     },
     "703": {
         type: RoomType.MultiPurposeRoom,
-        displayName: "Guard/ Noise???",
-        name: "703: Color Guard Room/Percussion Room???",
+        displayName: "Pit Room",
+        name: "703: Pit Room",
         subjects: [Subject.Music],
     },
     "708": {
@@ -282,6 +298,8 @@ const b700 = {
     },
     "722": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Filice"],
+        subjects: [Subject.English],
     },
     "723": {
         type: RoomType.ClassRoom,
@@ -304,6 +322,8 @@ const b700 = {
 const b800 = {
     "802": {
         type: RoomType.ClassRoom,
+        staff: ["Mr. Aron"],
+        subjects: [Subject.Music, Subject.Art]
     },
     "804": {
         type: RoomType.ClassRoom,
@@ -326,13 +346,18 @@ const b800 = {
 const b900 = {
     "905": {
         type: RoomType.ClassRoom,
-        subjects: [Subject.Art]
+        staff: ["Ms. Conrad"],
+        subjects: [Subject.Art],
     },
     "906": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Conrad"],
+        subjects: [Subject.Art],
     },
     "910": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Conrad"],
+        subjects: [Subject.Art],
     },
     "911": {
         type: RoomType.ClassRoom,
@@ -492,6 +517,8 @@ const b7000 = {
     },
     "7103": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Kuehn"],
+        subjects: [Subject.Science],
     },
     "7201": {
         type: RoomType.ClassRoom,
@@ -570,7 +597,7 @@ const bMisc = {
     "dance_studio": {
         type: RoomType.MultiPurposeRoom,
         name: "Dance Studio",
-        subjects: [Subject.PE],
+        subjects: [Subject.Art, Subject.PE],
     },
     "g_lockers": {
         type: RoomType.MultiPurposeRoom,
