@@ -30,6 +30,6 @@
 <div>
     <Rect id="723" x={ul3.x} y={ul3.y} w={80} h={35}/>
     <Rect id="722" x={ul3.x} y={ul3.y + (35 + off)} w={80} h={35}/>
-    <Rect id="721" x={ul3.x + 45} y={ul3.y + (35 + off) * 2} w={35} h={75}/>
-    <Rect id="724" x={ul3.x} y={ul3.y + 35 * 2 + off * 2 + 75 - 30} w={40} h={30}/>
+    <Rect id="721" x={ul3.x + 45} y={ul3.y + (35 + off) * 2} w={35} h={60}/>
+    <Rect id="724" x={ul3.x} y={ul3.y + 35 * 2 + off * 2 + 60 - 30} w={40} h={30}/>
 </div>

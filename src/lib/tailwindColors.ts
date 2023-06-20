@@ -8,7 +8,7 @@ type ColorDict = {
 
 export const black = "#000000", white = "#ffffff";
 
-let colors: ColorDict = {
+const colors: ColorDict = {
     "slate": {
         "50": "#f8fafc",
         "100": "#f1f5f9",

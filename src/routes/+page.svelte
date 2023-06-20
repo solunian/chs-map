@@ -13,11 +13,13 @@
     import BldgThousands from "$lib/components/bldgs/BldgThousands.svelte";
     
     import TheaterSvg from "$lib/components/svgs/TheaterSvg.svelte";
+    import CafeteriaF1 from "$lib/components/svgs/CafeteriaF1.svelte";
 </script>
 
 
 <Header/>
 <FloorToggle/>
+
 
 <BldgOne/>
 <BldgTwo/>
@@ -30,6 +32,7 @@
 <BldgThousands/>
 
 <TheaterSvg/>
+<CafeteriaF1/>
 
 
 

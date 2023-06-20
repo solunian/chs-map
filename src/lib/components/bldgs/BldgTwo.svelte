@@ -8,10 +8,6 @@
     const ids2 = ["208", "206-7", "205", "204", "203", "202"];
     const w = 50, h = 38;
     const off = 5;
-
-    const totalH = h * 7 + off * 6 - off * 4;
-    const hOfSix = totalH / 5.0;
-    
 </script>
 
 
