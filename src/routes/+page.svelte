@@ -24,6 +24,7 @@
     import Mezzanine from "$lib/components/svgs/Mezzanine.svelte";
     import Library from "$lib/components/svgs/Library.svelte";
     import BldgMain from "$lib/components/bldgs/BldgMain.svelte";
+    import Roads from "$lib/components/Roads.svelte";
 </script>
 
 
@@ -58,6 +59,7 @@
     <Mezzanine/>
 {/if}
 
+<Roads/>
 
 
 
