@@ -404,11 +404,11 @@ const b6000 = {
     },
     "6110": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Aggoun"],
-        subjects: [Subject.Language],
     },
     "6111": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Aggoun"],
+        subjects: [Subject.Language],
     },
     "6115": {
         type: RoomType.ClassRoom,
@@ -567,6 +567,7 @@ const bMain = {
     "library": {
         type: RoomType.MultiPurposeRoom,
         name: "Library",
+        staff: ["Mrs. Hedstrom"]
     },
     "1214": {
         type: RoomType.ClassRoom,
