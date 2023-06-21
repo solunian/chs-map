@@ -20,7 +20,7 @@ export const subjectDict: SubjectInfo[] = [];
         color: "blue",
     };
     subjectDict[Subject.History] = {
-        subjectStr: "history",
+        subjectStr: "social studies",
         color: "purple",
     };
     subjectDict[Subject.Language] = {

@@ -102,7 +102,7 @@ const b200 = {
     "213": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Ray"],
-        subjects: [Subject.Language],
+        subjects: [Subject.English],
     },
     "214": {
         type: RoomType.RecArea,
