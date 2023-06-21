@@ -21,7 +21,7 @@
     import BldgPhysEd from "$lib/components/bldgs/BldgPhysEd.svelte";
     import CafeteriaF2 from "$lib/components/svgs/CafeteriaF2.svelte";
     import { isSecondFloorVisible } from "$lib/stores";
-    import Mezzanine from "$lib/components/svgs/Mezzanine.svelte";
+    import Balcony from "$lib/components/svgs/Balcony.svelte";
     import Library from "$lib/components/svgs/Library.svelte";
     import BldgMain from "$lib/components/bldgs/BldgMain.svelte";
     import Roads from "$lib/components/Roads.svelte";
@@ -56,7 +56,7 @@
     <Library/>
     <CafeteriaF2/>
     <BldgMain/>
-    <Mezzanine/>
+    <Balcony/>
 {/if}
 
 <Roads/>

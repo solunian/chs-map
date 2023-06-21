@@ -15,7 +15,9 @@ const b100 = {
         type: RoomType.ClassRoom
     },
     "104": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mrs. Merrick"],
+        subjects: [Subject.English]
     },
     "105": {
         type: RoomType.ClassRoom,
@@ -33,19 +35,25 @@ const b100 = {
     "108": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Bui"],
-        subjects: [Subject.Special],
+        subjects: [Subject.CTE],
     },
     "109": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Santa Cruz"],
+        subjects: [Subject.History]
     },
     "110": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mrs. Avvakumovits"],
+        subjects: [Subject.English]
     },
     "114": {
         type: RoomType.ClassRoom
     },
     "115": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Coleman"],
+        subjects: [Subject.History]
     },
     "116": {
         type: RoomType.ClassRoom,
@@ -102,7 +110,7 @@ const b200 = {
     "213": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Ray"],
-        subjects: [Subject.Language],
+        subjects: [Subject.English],
     },
     "214": {
         type: RoomType.RecArea,
@@ -119,7 +127,7 @@ const b300 = {
     "307": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Ferrante"],
-        subjects: [Subject.Special]
+        subjects: [Subject.CTE, Subject.Math]
     },
     "308": {
         type: RoomType.ClassRoom
@@ -132,8 +140,8 @@ const b300 = {
     },
     "314": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Mcleod"],
-        subjects: [Subject.Special],
+        staff: ["Mr. McLeod"],
+        subjects: [Subject.CTE, Subject.Math],
     },
     "315": {
         type: RoomType.ClassRoom,
@@ -143,7 +151,7 @@ const b300 = {
     "316": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Hill"],
-        subjects: [Subject.Special],
+        subjects: [Subject.CTE],
     },
     "317": {
         type: RoomType.ClassRoom
@@ -186,6 +194,7 @@ const b400 = {
     },
     "410": {
         type: RoomType.ClassRoom,
+        subjects: [Subject.Special]
     },
     "411": {
         type: RoomType.ClassRoom,
@@ -323,7 +332,7 @@ const b800 = {
     "802": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Aron"],
-        subjects: [Subject.Music, Subject.Art]
+        subjects: [Subject.Music]
     },
     "804": {
         type: RoomType.ClassRoom,
@@ -470,6 +479,8 @@ const b6000 = {
     },
     "6227": {
         type: RoomType.ClassRoom,
+        staff: ["Mrs. Hooper"],
+        subjects: [Subject.English]
     },
     "6228": {
         type: RoomType.ClassRoom,
@@ -549,9 +560,9 @@ const bMain = {
         type: RoomType.MultiPurposeRoom,
         name: "Cafeteria",
     },
-    "mezzanine": {
+    "balcony": {
         type: RoomType.RecArea,
-        name: "Mezzanine",
+        name: "Balcony",
     },
     "ccc": {
         type: RoomType.AdminRoom,
@@ -570,7 +581,9 @@ const bMain = {
         staff: ["Mrs. Hedstrom"]
     },
     "1214": {
-        type: RoomType.ClassRoom,
+        type: RoomType.AdminRoom,
+        displayName: "1214",
+        name: "Staff Support"
     },
     "1215": {
         type: RoomType.ClassRoom,

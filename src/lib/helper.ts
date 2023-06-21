@@ -20,7 +20,7 @@ export const subjectDict: SubjectInfo[] = [];
         color: "blue",
     };
     subjectDict[Subject.History] = {
-        subjectStr: "history",
+        subjectStr: "social studies",
         color: "purple",
     };
     subjectDict[Subject.Language] = {
@@ -46,6 +46,10 @@ export const subjectDict: SubjectInfo[] = [];
     subjectDict[Subject.Special] = {
         subjectStr: "special",
         color: "pink",
+    };
+    subjectDict[Subject.CTE] = {
+        subjectStr: "career ed",
+        color: "violet",
     };
 }
 export const defaultSubjectInfo: SubjectInfo = {
@@ -80,7 +84,7 @@ export const getHoverColor = (color: string) => getCustomColor(color, "300");
 
 export const formatTeacherList = (teacherArr: string[] | undefined) => {
     if (teacherArr == undefined || teacherArr.length === 0) {
-        return "anarchy?";
+        return "not available";
     } else if (teacherArr.length === 1) {
         return teacherArr[0];
     } else if (teacherArr.length <= 3) {

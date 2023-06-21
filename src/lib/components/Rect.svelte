@@ -56,7 +56,9 @@
         <h3>#️⃣ {tooltipRoomText}</h3>
 
         {#if room?.type === RoomType.ClassRoom || room?.type === RoomType.AdminRoom}
-            <h3>🍎 {tooltipTeachersText}</h3>
+            {#if room?.type === RoomType.ClassRoom || room?.type === RoomType.AdminRoom && tooltipTeachersText !== "not available"} 
+                <h3>🍎 {tooltipTeachersText}</h3>
+            {/if}
         {/if}
         
         <div class="flex flex-row gap-1 mt-1">
