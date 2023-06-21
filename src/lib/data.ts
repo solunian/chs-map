@@ -127,7 +127,7 @@ const b300 = {
     "307": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Ferrante"],
-        subjects: [Subject.CTE, Subject.Math]
+        subjects: [Subject.CTE]
     },
     "308": {
         type: RoomType.ClassRoom
@@ -141,7 +141,7 @@ const b300 = {
     "314": {
         type: RoomType.ClassRoom,
         staff: ["Mr. McLeod"],
-        subjects: [Subject.CTE, Subject.Math],
+        subjects: [Subject.CTE],
     },
     "315": {
         type: RoomType.ClassRoom,
@@ -560,6 +560,11 @@ const bMain = {
         type: RoomType.MultiPurposeRoom,
         name: "Cafeteria",
     },
+    "mezzanine": {
+        type: RoomType.MultiPurposeRoom,
+        displayName: "Mezzanine",
+        name: "Mezzanine | Cafeteria F2",
+    },
     "balcony": {
         type: RoomType.RecArea,
         name: "Balcony",
@@ -586,7 +591,7 @@ const bMain = {
         name: "Staff Support"
     },
     "1215": {
-        type: RoomType.ClassRoom,
+        type: RoomType.MultiPurposeRoom,
         displayName: "1215",
         name: "Computer Lab",
     },
