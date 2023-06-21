@@ -80,6 +80,9 @@ export const getHoverColor = (color: string) => getCustomColor(color, "300");
 
 export const formatTeacherList = (teacherArr: string[] | undefined) => {
     if (teacherArr == undefined || teacherArr.length === 0) {
+        if (RoomType.AdminRoom) {
+            return null
+        }
         return "not available";
     } else if (teacherArr.length === 1) {
         return teacherArr[0];
