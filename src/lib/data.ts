@@ -549,9 +549,9 @@ const bMain = {
         type: RoomType.MultiPurposeRoom,
         name: "Cafeteria",
     },
-    "mezzanine": {
+    "balcony": {
         type: RoomType.RecArea,
-        name: "Mezzanine",
+        name: "Balcony",
     },
     "ccc": {
         type: RoomType.AdminRoom,
@@ -570,7 +570,9 @@ const bMain = {
         staff: ["Mrs. Hedstrom"]
     },
     "1214": {
-        type: RoomType.ClassRoom,
+        type: RoomType.AdminRoom,
+        displayName: "1214",
+        name: "Staff Support"
     },
     "1215": {
         type: RoomType.ClassRoom,

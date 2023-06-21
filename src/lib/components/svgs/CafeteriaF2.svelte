@@ -19,7 +19,7 @@
     let color = subjectInfo?.color || "gray";
     let displayName = room?.displayName || room?.name || id;
 
-    let tooltipRoomText = room?.name || "Room " + id;
+    let tooltipRoomText = "Mezzanine | Cafeteria F2" || room?.name || "Room " + id;
     let tooltipTeachersText = formatTeacherList(room?.staff);
 
     let normalColor = getNormalColor(color);
