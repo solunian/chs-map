@@ -80,7 +80,7 @@ export const getHoverColor = (color: string) => getCustomColor(color, "300");
 
 export const formatTeacherList = (teacherArr: string[] | undefined) => {
     if (teacherArr == undefined || teacherArr.length === 0) {
-        return "anarchy?";
+        return "not available";
     } else if (teacherArr.length === 1) {
         return teacherArr[0];
     } else if (teacherArr.length <= 3) {
