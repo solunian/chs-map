@@ -56,7 +56,7 @@
         <h3>#️⃣ {tooltipRoomText}</h3>
 
         {#if room?.type === RoomType.ClassRoom || room?.type === RoomType.AdminRoom}
-            {#if tooltipTeachersText !== null} 
+            {#if room?.type === RoomType.ClassRoom || room?.type === RoomType.AdminRoom && tooltipTeachersText !== "not available"} 
                 <h3>🍎 {tooltipTeachersText}</h3>
             {/if}
         {/if}
