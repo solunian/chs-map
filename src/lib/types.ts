@@ -24,6 +24,7 @@ export enum Subject {
     Language,
     PE,
     Special,
+    CTE,
 }
 
 export interface Room {

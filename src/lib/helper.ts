@@ -47,6 +47,10 @@ export const subjectDict: SubjectInfo[] = [];
         subjectStr: "special",
         color: "pink",
     };
+    subjectDict[Subject.CTE] = {
+        subjectStr: "career ed",
+        color: "violet",
+    };
 }
 export const defaultSubjectInfo: SubjectInfo = {
     subjectStr: "",
