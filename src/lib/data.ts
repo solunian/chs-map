@@ -385,6 +385,8 @@ const b900 = {
     },
     "914": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Schaetzke"],
+        subjects: [Subject.Language],
     },
     "915": {
         type: RoomType.ClassRoom,
