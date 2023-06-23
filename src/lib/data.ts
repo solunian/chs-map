@@ -13,8 +13,8 @@ const b100 = {
     },
     "103": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Morgan"],
-        subjects: [Subject.History]
+        staff: ["Mr. Cryan"],
+        subjects: [Subject.Math, Subject.Special],
     },
     "104": {
         type: RoomType.ClassRoom,
@@ -123,8 +123,6 @@ const b200 = {
     },
     "215": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Cryan"],
-        subjects: [Subject.Math, Subject.Special],
     },
 };
 const b300 = {
@@ -137,7 +135,9 @@ const b300 = {
         type: RoomType.ClassRoom
     },
     "309": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Soto"],
+        subjects: [Subject.History, Subject.Special],
     },
     "310": {
         type: RoomType.ClassRoom
@@ -445,6 +445,8 @@ const b6000 = {
     },
     "6126": {
         type: RoomType.ClassRoom,
+        staff: ["Mrs. Ward, Mr. Heskett"],
+        subjects: [Subject.Special],
     },
     "6127": {
         type: RoomType.ClassRoom,
@@ -537,6 +539,8 @@ const b7000 = {
     },
     "7102": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Kuehn"],
+        subjects: [Subject.Science],
     },
     "7103": {
         type: RoomType.ClassRoom,
