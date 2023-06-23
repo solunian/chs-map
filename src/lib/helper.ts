@@ -1,4 +1,4 @@
-import type { ID, Room } from "$lib/types";
+import type { Bldg, ID, Room } from "$lib/types";
 import { RoomType, Subject } from "$lib/types";
 import colors from "$lib/tailwindColors";
 
@@ -103,4 +103,4 @@ export const formatTeacherList = (teacherArr: string[] | undefined) => {
 }
 
 // object to map function to make my life easier
-export const o2m = (o: Object): Map<ID, Room> => new Map(Object.entries(o));
+export const o2m = (o: Bldg): Map<ID, Room> => new Map(Object.entries(o));

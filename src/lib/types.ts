@@ -35,6 +35,10 @@ export interface Room {
     subjects?: Subject[];
 }
 
+export interface Bldg {
+    [key: string]: Room;
+}
+
 export interface Data {
     last_updated: Moment;
     github_link: string;
