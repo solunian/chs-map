@@ -15,14 +15,10 @@ const b100 = {
         type: RoomType.ClassRoom
     },
     "104": {
-        type: RoomType.ClassRoom,
-        staff: ["Mrs. Merrick"],
-        subjects: [Subject.English]
+        type: RoomType.ClassRoom
     },
     "105": {
-        type: RoomType.ClassRoom,
-        staff: ["Ms. Stavis"],
-        subjects: [Subject.Special],
+        type: RoomType.ClassRoom
     },
     "106": {
         type: RoomType.ClassRoom
@@ -51,14 +47,10 @@ const b100 = {
         type: RoomType.ClassRoom
     },
     "115": {
-        type: RoomType.ClassRoom,
-        staff: ["Mr. Coleman"],
-        subjects: [Subject.History]
+        type: RoomType.ClassRoom
     },
     "116": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Phelps"],
-        subjects: [Subject.English, Subject.Special],
     },
     "office_100": {
         type: RoomType.AdminRoom,
@@ -89,8 +81,6 @@ const b200 = {
     },
     "208": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Nguyen"],
-        subjects: [Subject.History],
     },
     "210": {
         type: RoomType.ClassRoom,
@@ -98,9 +88,7 @@ const b200 = {
         subjects: [Subject.English],
     },
     "211": {
-        type: RoomType.ClassRoom,
-        staff: ["Ms. Masuda"],
-        subjects: [Subject.English, Subject.Special],
+        type: RoomType.ClassRoom
     },
     "212": {
         type: RoomType.ClassRoom,
@@ -127,7 +115,7 @@ const b300 = {
     "307": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Ferrante"],
-        subjects: [Subject.CTE, Subject.Math]
+        subjects: [Subject.Special]
     },
     "308": {
         type: RoomType.ClassRoom
@@ -140,8 +128,8 @@ const b300 = {
     },
     "314": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. McLeod"],
-        subjects: [Subject.CTE, Subject.Math],
+        staff: ["Mr. Mcleod"],
+        subjects: [Subject.Special],
     },
     "315": {
         type: RoomType.ClassRoom,
@@ -385,6 +373,8 @@ const b900 = {
     },
     "914": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Schaetzke"],
+        subjects: [Subject.Language],
     },
     "915": {
         type: RoomType.ClassRoom,
@@ -560,7 +550,7 @@ const bMain = {
         type: RoomType.MultiPurposeRoom,
         name: "Cafeteria",
     },
-    "balcony": {
+    "mezzanine": {
         type: RoomType.RecArea,
         name: "Balcony",
     },
@@ -586,7 +576,7 @@ const bMain = {
         name: "Staff Support"
     },
     "1215": {
-        type: RoomType.ClassRoom,
+        type: RoomType.MultiPurposeRoom,
         displayName: "1215",
         name: "Computer Lab",
     },

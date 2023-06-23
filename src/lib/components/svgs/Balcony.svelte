@@ -74,7 +74,7 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
             </g>
         </svg>
 
-        <h2 class="fixed text-md leading-5 pointer-events-none" style="transform: translate(35px, -{h / 2 - 20}px);">{displayName}</h2>
+        <h2 class="fixed text-md leading-5 pointer-events-none" style="transform: translate(47px, -{h / 2 - 15}px);">{displayName}</h2>
     </div>
 
     <div id="tooltip" class="pointer-events-none" bind:clientWidth={tooltipWidth}

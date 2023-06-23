@@ -27,7 +27,7 @@
 </div>
 
 
-<div class="absolute -z-10 p-8 flex flex-col items-center -rotate-90 cursor-default" style="left: {x3}px; top: {y3}px;">
+<div class="absolute -z-10 p-12 flex flex-col items-center -rotate-90 cursor-default" style="left: {x3}px; top: {y3}px;">
     <h2 class="text-center">
         Tilson Avenue
     </h2>
