@@ -1,10 +1,10 @@
-import type { Data } from "$lib/types";
+import type { Bldg, Data } from "$lib/types";
 import { RoomType, Subject } from "$lib/types";
 import { o2m } from "$lib/helper";
 import moment from "moment";
 
 
-const b100 = {
+const b100: Bldg = {
     "101": {
         type: RoomType.ClassRoom
     },
@@ -69,7 +69,7 @@ const b100 = {
         name: "office",
     }
 };
-const b200 = {
+const b200: Bldg = {
     "202": {
         type: RoomType.ClassRoom,
         staff: ["Mrs. Chen"],
@@ -125,7 +125,7 @@ const b200 = {
         type: RoomType.ClassRoom,
     },
 };
-const b300 = {
+const b300: Bldg = {
     "307": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Ferrante"],
@@ -174,7 +174,7 @@ const b300 = {
         name: "Teachers' Lounge",
     },
 };
-const b400 = {
+const b400: Bldg = {
     "401": {
         type: RoomType.ClassRoom
     },
@@ -229,7 +229,7 @@ const b400 = {
         type: RoomType.ClassRoom,
     },
 };
-const b500 = {
+const b500: Bldg = {
     "501": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Stavis", "Mr. Mitchell"],
@@ -276,7 +276,7 @@ const b500 = {
         subjects: [Subject.Science],
     },
 };
-const b700 = {
+const b700: Bldg = {
     "701": {
         type: RoomType.MultiPurposeRoom,
         displayName: "closet",
@@ -332,7 +332,7 @@ const b700 = {
         type: RoomType.GirlRestRoom,
     },
 };
-const b800 = {
+const b800: Bldg = {
     "802": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Aron"],
@@ -358,7 +358,7 @@ const b800 = {
         name: "Girls' Restroom",
     }
 };
-const b900 = {
+const b900: Bldg = {
     "905": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Conrad"],
@@ -406,7 +406,7 @@ const b900 = {
     }
 
 };
-const b6000 = {
+const b6000: Bldg = {
     "6101": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Jin"],
@@ -531,7 +531,7 @@ const b6000 = {
         type: RoomType.AdminRestRoom,
     },
 };
-const b7000 = {
+const b7000: Bldg = {
     "7101": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Goldenkranz"],
@@ -563,7 +563,7 @@ const b7000 = {
         subjects: [Subject.Science],
     },
 };
-const bMain = {
+const bMain: Bldg = {
     "brr_cafeteria": {
         type: RoomType.BoyRestRoom,
         name: "Boys' Restroom",
@@ -608,7 +608,7 @@ const bMain = {
     },
     
 };
-const bMisc = {
+const bMisc: Bldg = {
     "theater": {
         type: RoomType.MultiPurposeRoom,
         displayName: "Theater",

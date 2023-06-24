@@ -45,6 +45,7 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
                 <g transform="matrix(0.238599,0,0,0.606987,-225.997,-353.834)">
                     <rect x="947.185" y="1942.01" width="1684.21" height="1006.15"/>
         
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
                     <g class="svg" style="fill: {normalColor}; outline: none;"
                         on:mouseover={(e) => {
                             e.currentTarget.style.fill = hoverColor;

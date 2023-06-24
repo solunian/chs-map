@@ -18,6 +18,7 @@
 
 <div class="fixed right-24 top-4 z-20">
     <button id="tooltip-target">
+        <!-- svelte-ignore a11y-no-static-element-interactions -->
         <svg on:click={togglePlayPause} on:keydown xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 stroke-amber-400 transition ease-in hover:scale-110">
             {#if isPlaying}
             <!-- (||) button -->
