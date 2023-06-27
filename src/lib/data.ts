@@ -9,7 +9,9 @@ const b100: Bldg = {
         type: RoomType.ClassRoom
     },
     "102": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Morgan"],
+        subjects: [Subject.SocialStudies],
     },
     "103": {
         type: RoomType.ClassRoom,
@@ -42,7 +44,7 @@ const b100: Bldg = {
     "109": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Santa Cruz"],
-        subjects: [Subject.History]
+        subjects: [Subject.SocialStudies]
     },
     "110": {
         type: RoomType.ClassRoom,
@@ -57,7 +59,7 @@ const b100: Bldg = {
     "115": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Coleman"],
-        subjects: [Subject.History]
+        subjects: [Subject.SocialStudies]
     },
     "116": {
         type: RoomType.ClassRoom,
@@ -78,7 +80,7 @@ const b200: Bldg = {
     "203": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Lowe-Weiler"],
-        subjects: [Subject.History],
+        subjects: [Subject.SocialStudies],
     },
     "204": {
         type: RoomType.ClassRoom
@@ -94,7 +96,7 @@ const b200: Bldg = {
     "208": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Nguyen"],
-        subjects: [Subject.History],
+        subjects: [Subject.SocialStudies],
     },
     "210": {
         type: RoomType.ClassRoom,
@@ -123,6 +125,8 @@ const b200: Bldg = {
     },
     "215": {
         type: RoomType.ClassRoom,
+        staff: ["Mr. Coleman"],
+        subjects: [Subject.SocialStudies],
     },
 };
 const b300: Bldg = {
@@ -137,7 +141,7 @@ const b300: Bldg = {
     "309": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Soto"],
-        subjects: [Subject.History, Subject.Special],
+        subjects: [Subject.SocialStudies, Subject.Special],
     },
     "310": {
         type: RoomType.ClassRoom
@@ -343,6 +347,8 @@ const b800: Bldg = {
     },
     "810": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Felice"],
+        subjects: [Subject.English],
     },
     "815": {
         type: RoomType.ClassRoom,
@@ -457,12 +463,12 @@ const b6000: Bldg = {
     "6201": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Morse"],
-        subjects: [Subject.History],
+        subjects: [Subject.SocialStudies],
     },
     "6205": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Yeh"],
-        subjects: [Subject.History],
+        subjects: [Subject.SocialStudies],
     },
     "6206": {
         type: RoomType.ClassRoom,
@@ -662,7 +668,7 @@ const bMisc: Bldg = {
 };
 
 const data: Data = {
-    last_updated: moment("6-23-2023", "MM-DD-YYYY"),
+    last_updated: moment("6-27-2023", "MM-DD-YYYY"),
     github_link: "https://github.com/solunian/chs-map",
     rooms: new Map([
         ...o2m(b100),

@@ -20,7 +20,7 @@ export enum Subject {
     Art,
     Music,
     English,
-    History,
+    SocialStudies,
     Language,
     PE,
     Special,
