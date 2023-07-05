@@ -22,5 +22,6 @@
 <div>
     <Rect id="910" x={ul2.x} y={ul2.y} w={65} h={50}/>
     <Rect id="906" x={ul2.x} y={ul2.y + (50 + off)} w={65} h={30}/>
-    <Rect id="905" x={ul2.x} y={ul2.y + (50 + off) + (30 + off)} w={65} h={125}/>
+    <Rect id="902/903" x={ul2.x} y={ul2.y + (50 + off) + (30 + off)} w={65} h={90}/>
+    <Rect id="901" x={ul2.x} y={ul2.y + (50 + off) + (30 + off) + (90 + off)} w={65} h={30}/>
 </div>

@@ -365,8 +365,15 @@ const b800: Bldg = {
     }
 };
 const b900: Bldg = {
-    "905": {
+    "901": {
+        type: RoomType.MultiPurposeRoom,
+        displayName: "901",
+        name: "Changing Room",
+    },
+    "902/903": {
         type: RoomType.ClassRoom,
+        displayName: "Drama",
+        name: "902/903: Drama",
         staff: ["Ms. Conrad"],
         subjects: [Subject.Art],
     },
@@ -623,7 +630,7 @@ const bMisc: Bldg = {
     "theater": {
         type: RoomType.MultiPurposeRoom,
         displayName: "Theater",
-        name: "Robert B. Lopez Theater",
+        name: "Robert L. Lopez Center",
         subjects: [Subject.Music, Subject.Art],
     },
     "wagon_wheel": {
@@ -668,7 +675,7 @@ const bMisc: Bldg = {
 };
 
 const data: Data = {
-    last_updated: moment("6-27-2023", "MM-DD-YYYY"),
+    last_updated: moment("07-05-2023", "MM-DD-YYYY"),
     github_link: "https://github.com/solunian/chs-map",
     rooms: new Map([
         ...o2m(b100),
