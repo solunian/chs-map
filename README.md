@@ -23,6 +23,8 @@ I have no further desire to extend this, so the only changes will be for mainten
 ## Dev Notes (Jul 18, 2023)
 - finally got the favicon on mobile, it was because 512x512 was too big
   - 128x128 worked!
+- idk does discord cache the images for embeds so it doesn't make one for testing?
+  - wtvr i give up
 
 ## Dev Notes (Jun 20, 2023)
 - idk if this was a waste of time or not
