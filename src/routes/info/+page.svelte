@@ -2,6 +2,10 @@
     import data from "$lib/data";
 </script>
 
+<svelte:head>
+    <title>Info - CHS Map</title>
+</svelte:head>
+
 <div class="flex flex-row justify-center text-lg">
     <div class="flex flex-col py-20 p-8" style="width: 36rem;">
 
@@ -14,7 +18,7 @@
                 </a>      
             </div>
 
-            <h1>Notes</h1>
+            <h1>Info</h1>
         </div>
 
         <h2 class="text-sm">
@@ -51,7 +55,7 @@
             </p>
         </div>
 
-        <h2 class="mt-8 text-xl mb-2 underline">Info!</h2>
+        <h2 class="mt-8 text-xl mb-2 underline">Contact Info</h2>
         <div class="flex flex-col gap-1">
             <div class="text-blue-700 flex flex-row">Discord: 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-5 h-5 stroke-amber-800 translate-y-1 ml-1">
