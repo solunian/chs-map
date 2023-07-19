@@ -20,6 +20,10 @@ I have no further desire to extend this, so the only changes will be for mainten
 - Doki Doki Literature Club Theme at `static/ddlc_theme.mp3`: cool music!
 - `CHSCampusPlan.pdf`: map reference
 
+## Dev Notes (Jul 18, 2023)
+- finally got the favicon on mobile, it was because 512x512 was too big
+  - 128x128 worked!
+
 ## Dev Notes (Jun 20, 2023)
 - idk if this was a waste of time or not
 - I need to sleep more
