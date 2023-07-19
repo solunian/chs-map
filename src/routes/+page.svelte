@@ -27,6 +27,9 @@
     import Roads from "$lib/components/Roads.svelte";
 </script>
 
+<svelte:head>
+    <title>Cupertino High School Map</title>
+</svelte:head>
 
 <Header/>
 <FloorToggle/>

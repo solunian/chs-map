@@ -6,10 +6,6 @@
     import { windowWidth } from "$lib/stores";
 </script>
 
-<svelte:head>
-    <title>Cupertino High School Map</title>
-</svelte:head>
-
 <svelte:window bind:innerWidth={$windowWidth}/>
 
 <div class="w-full h-full">
