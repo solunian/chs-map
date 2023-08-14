@@ -79,11 +79,13 @@ const b200: Bldg = {
     },
     "203": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Lowe-Weiler"],
+        staff: ["Ms. Lowe Weiler"],
         subjects: [Subject.SocialStudies],
     },
     "204": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Hazeghi"],
+        subjects: [Subject.English],
     },
     "205": {
         type: RoomType.ClassRoom
@@ -100,8 +102,8 @@ const b200: Bldg = {
     },
     "210": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Sato"],
-        subjects: [Subject.English],
+        staff: ["Ms. Sato", "Ms. Shriver"],
+        subjects: [Subject.English, Subject.Special],
     },
     "211": {
         type: RoomType.ClassRoom,
@@ -162,7 +164,9 @@ const b300: Bldg = {
         subjects: [Subject.CTE],
     },
     "317": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Arcadia"],
+        subjects: [Subject.English],
     },
     "318": {
         type: RoomType.ClassRoom,
@@ -183,7 +187,9 @@ const b400: Bldg = {
         type: RoomType.ClassRoom
     },
     "404": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Lowe Weiler"],
+        subjects: [Subject.CTE],
     },
     "405": {
         type: RoomType.ClassRoom,
@@ -347,8 +353,6 @@ const b800: Bldg = {
     },
     "810": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Felice"],
-        subjects: [Subject.English],
     },
     "815": {
         type: RoomType.ClassRoom,
@@ -557,7 +561,7 @@ const b7000: Bldg = {
     },
     "7103": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Kuehn"],
+        staff: ["Ms. Kuehn", "Mr. Stavis"],
         subjects: [Subject.Science],
     },
     "7201": {
