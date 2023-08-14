@@ -679,7 +679,7 @@ const bMisc: Bldg = {
 };
 
 const data: Data = {
-    last_updated: moment("07-05-2023", "MM-DD-YYYY"),
+    last_updated: moment("08-14-2023", "MM-DD-YYYY"),
     github_link: "https://github.com/solunian/chs-map",
     rooms: new Map([
         ...o2m(b100),
