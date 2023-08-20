@@ -135,7 +135,7 @@ const b300: Bldg = {
     "307": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Ferrante"],
-        subjects: [Subject.CTE]
+        subjects: [Subject.CTE, Subject.Math]
     },
     "308": {
         type: RoomType.ClassRoom
