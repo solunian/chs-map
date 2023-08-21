@@ -21,6 +21,7 @@
     <Rect id={"6105"} x={ul.x} y={ul.y + 20 + (h + off)} {w} {h}/> -->
     
     <Rect id={"6105"} x={ul.x} y={ul.y + 20} {w} h={h * 2 + off}/>
+    <Rect id={"arr_6000_1"} x={ul.x + 15} y={ul.y + 20 + (h + off) * 2} w={35} {h}/>
     <Rect id={"6101"} x={ul.x} y={ul.y + 20 + (h + off) * 2 + 40} {w} {h}/>
     
     <!-- UP SIDE: LEFT TO RIGHT -->
@@ -58,6 +59,7 @@
 
     <!-- LEFT SIDE: UP TO DOWN -->
     <Rect id={"6206"} x={ul.x} y={ul.y + 20} {w} {h}/>
+    <Rect id={"arr_6000_2"} x={ul.x + 15} y={ul.y + 20 + (h + off) * 2} w={35} {h}/>
     <Rect id={"6205"} x={ul.x} y={ul.y + 20 + (h + off)} {w} {h}/>
     
     <Rect id={"6201"} x={ul.x} y={ul.y + 20 + (h + off) * 2 + 40} {w} {h}/>

@@ -6,7 +6,7 @@
     import { RoomType } from "$lib/types";
     import SubjectPill from "$lib/components/SubjectPill.svelte";
 
-    let x = 592, y = 830, w = 108, h = 90, id = "cafeteria"; // h is the offset for the tooltip now
+    let x = 592, y = 830, w = 108, h = 90, id = "mezzanine"; // h is the offset for the tooltip now
 
     const room = data.rooms.get(id);
     let subjectInfo;
@@ -46,6 +46,7 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
                 <g id="Cafeteria-Floor-2" transform="matrix(0.776127,0,0,0.906034,610.382,-331.328)">
                     <rect x="-72.432" y="469.948" width="501.97" height="360.958" style="fill:none;"/>
                     
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
                     <g class="svg" style="fill: {normalColor}; outline: none;"
                     on:mouseover={(e) => {
                         e.currentTarget.style.fill = hoverColor;
@@ -72,7 +73,7 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
             </g>
         </svg>
         
-        <h2 class="fixed text-md leading-5 pointer-events-none" style="transform: translate(20px, -{h / 2 - 7}px);">{displayName}</h2>
+        <h2 class="fixed text-md leading-5 pointer-events-none" style="transform: translate(16px, -{h / 2 - 7}px);">{displayName}</h2>
     </div>
 
     <div id="tooltip" class="pointer-events-none" bind:clientWidth={tooltipWidth}

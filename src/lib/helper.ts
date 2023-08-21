@@ -1,4 +1,4 @@
-import type { ID, Room } from "$lib/types";
+import type { Bldg, ID, Room } from "$lib/types";
 import { RoomType, Subject } from "$lib/types";
 import colors from "$lib/tailwindColors";
 
@@ -19,8 +19,8 @@ export const subjectDict: SubjectInfo[] = [];
         subjectStr: "english",
         color: "blue",
     };
-    subjectDict[Subject.History] = {
-        subjectStr: "history",
+    subjectDict[Subject.SocialStudies] = {
+        subjectStr: "social studies",
         color: "purple",
     };
     subjectDict[Subject.Language] = {
@@ -36,7 +36,7 @@ export const subjectDict: SubjectInfo[] = [];
         color: "indigo",
     };
     subjectDict[Subject.PE] = {
-        subjectStr: "PE",
+        subjectStr: "pe",
         color: "yellow",
     };
     subjectDict[Subject.Science] = {
@@ -46,6 +46,10 @@ export const subjectDict: SubjectInfo[] = [];
     subjectDict[Subject.Special] = {
         subjectStr: "special",
         color: "pink",
+    };
+    subjectDict[Subject.CTE] = {
+        subjectStr: "cte",
+        color: "cyan",
     };
 }
 export const defaultSubjectInfo: SubjectInfo = {
@@ -80,7 +84,7 @@ export const getHoverColor = (color: string) => getCustomColor(color, "300");
 
 export const formatTeacherList = (teacherArr: string[] | undefined) => {
     if (teacherArr == undefined || teacherArr.length === 0) {
-        return "anarchy?";
+        return "none/missing...";
     } else if (teacherArr.length === 1) {
         return teacherArr[0];
     } else if (teacherArr.length <= 3) {
@@ -99,4 +103,4 @@ export const formatTeacherList = (teacherArr: string[] | undefined) => {
 }
 
 // object to map function to make my life easier
-export const o2m = (o: Object): Map<ID, Room> => new Map(Object.entries(o));
+export const o2m = (o: Bldg): Map<ID, Room> => new Map(Object.entries(o));

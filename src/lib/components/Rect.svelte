@@ -41,6 +41,7 @@
 </script>
 
 <div>
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div id="tooltip-target"
     class="absolute border-none transition ease-in rounded-md border p-1 hover:scale-105 hover:-translate-x-1 hover:-translate-y-1 text-center flex flex-col justify-center cursor-default" 
     style="left: {x}px; top: {y}px; width: {w}px; height: {h}px; background-color: {normalColor};"
@@ -55,7 +56,7 @@
     style="top: {y + tooltipTop}px; left: {x + tooltipLeft}px;">
         <h3>#️⃣ {tooltipRoomText}</h3>
 
-        {#if room?.type === RoomType.ClassRoom || room?.type === RoomType.AdminRoom}
+        {#if room?.type === RoomType.ClassRoom || (room?.type === RoomType.AdminRoom && room?.staff?.length || 0 > 0)}
             <h3>🍎 {tooltipTeachersText}</h3>
         {/if}
         

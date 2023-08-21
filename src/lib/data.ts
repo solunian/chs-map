@@ -1,21 +1,27 @@
-import type { Data } from "$lib/types";
+import type { Bldg, Data } from "$lib/types";
 import { RoomType, Subject } from "$lib/types";
 import { o2m } from "$lib/helper";
 import moment from "moment";
 
 
-const b100 = {
+const b100: Bldg = {
     "101": {
         type: RoomType.ClassRoom
     },
     "102": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Morgan"],
+        subjects: [Subject.SocialStudies],
     },
     "103": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Cryan"],
+        subjects: [Subject.Math, Subject.Special],
     },
     "104": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mrs. Merrick"],
+        subjects: [Subject.English],
     },
     "105": {
         type: RoomType.ClassRoom,
@@ -33,31 +39,39 @@ const b100 = {
     "108": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Bui"],
-        subjects: [Subject.Special],
+        subjects: [Subject.CTE],
     },
     "109": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Santa Cruz"],
+        subjects: [Subject.SocialStudies]
     },
     "110": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mrs. Avvakumovits"],
+        subjects: [Subject.English]
     },
     "114": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Morgan"],
+        subjects: [Subject.English]
     },
     "115": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Coleman"],
+        subjects: [Subject.SocialStudies]
     },
     "116": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Phelps"],
-        subjects: [Subject.English, Subject.Special],
+        subjects: [Subject.English, Subject.Special]
     },
     "office_100": {
         type: RoomType.AdminRoom,
         name: "office",
     }
 };
-const b200 = {
+const b200: Bldg = {
     "202": {
         type: RoomType.ClassRoom,
         staff: ["Mrs. Chen"],
@@ -65,11 +79,13 @@ const b200 = {
     },
     "203": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Lowe-Weiler"],
-        subjects: [Subject.History],
+        staff: ["Ms. Lowe Weiler"],
+        subjects: [Subject.SocialStudies],
     },
     "204": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Hazeghi"],
+        subjects: [Subject.English],
     },
     "205": {
         type: RoomType.ClassRoom
@@ -82,12 +98,12 @@ const b200 = {
     "208": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Nguyen"],
-        subjects: [Subject.History],
+        subjects: [Subject.SocialStudies],
     },
     "210": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Sato"],
-        subjects: [Subject.English],
+        staff: ["Ms. Sato", "Ms. Shriver"],
+        subjects: [Subject.English, Subject.Special],
     },
     "211": {
         type: RoomType.ClassRoom,
@@ -102,7 +118,7 @@ const b200 = {
     "213": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Ray"],
-        subjects: [Subject.Language],
+        subjects: [Subject.English],
     },
     "214": {
         type: RoomType.RecArea,
@@ -111,29 +127,31 @@ const b200 = {
     },
     "215": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Cryan"],
-        subjects: [Subject.Math, Subject.Special],
+        staff: ["Mr. Coleman"],
+        subjects: [Subject.SocialStudies],
     },
 };
-const b300 = {
+const b300: Bldg = {
     "307": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Ferrante"],
-        subjects: [Subject.Special]
+        subjects: [Subject.CTE, Subject.Math]
     },
     "308": {
         type: RoomType.ClassRoom
     },
     "309": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Sato"],
+        subjects: [Subject.SocialStudies, Subject.Special],
     },
     "310": {
         type: RoomType.ClassRoom
     },
     "314": {
         type: RoomType.ClassRoom,
-        staff: ["Mr. Mcleod"],
-        subjects: [Subject.Special],
+        staff: ["Mr. McLeod"],
+        subjects: [Subject.CTE],
     },
     "315": {
         type: RoomType.ClassRoom,
@@ -143,10 +161,12 @@ const b300 = {
     "316": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Hill"],
-        subjects: [Subject.Special],
+        subjects: [Subject.CTE],
     },
     "317": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Conrad"],
+        subjects: [Subject.English],
     },
     "318": {
         type: RoomType.ClassRoom,
@@ -162,12 +182,14 @@ const b300 = {
         name: "Teachers' Lounge",
     },
 };
-const b400 = {
+const b400: Bldg = {
     "401": {
         type: RoomType.ClassRoom
     },
     "404": {
-        type: RoomType.ClassRoom
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Lowe Weiler"],
+        subjects: [Subject.CTE],
     },
     "405": {
         type: RoomType.ClassRoom,
@@ -181,11 +203,12 @@ const b400 = {
     },
     "409": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Aguilar"],
+        staff: ["Ms. Aguilar", "Ms. Keifer"],
         subjects: [Subject.Language],
     },
     "410": {
         type: RoomType.ClassRoom,
+        subjects: [Subject.Special]
     },
     "411": {
         type: RoomType.ClassRoom,
@@ -216,7 +239,7 @@ const b400 = {
         type: RoomType.ClassRoom,
     },
 };
-const b500 = {
+const b500: Bldg = {
     "501": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Stavis", "Mr. Mitchell"],
@@ -263,7 +286,7 @@ const b500 = {
         subjects: [Subject.Science],
     },
 };
-const b700 = {
+const b700: Bldg = {
     "701": {
         type: RoomType.MultiPurposeRoom,
         displayName: "closet",
@@ -319,11 +342,11 @@ const b700 = {
         type: RoomType.GirlRestRoom,
     },
 };
-const b800 = {
+const b800: Bldg = {
     "802": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Aron"],
-        subjects: [Subject.Music, Subject.Art]
+        subjects: [Subject.Music]
     },
     "804": {
         type: RoomType.ClassRoom,
@@ -333,6 +356,8 @@ const b800 = {
     },
     "815": {
         type: RoomType.ClassRoom,
+        staff: ["Instructor Steele"],
+        subjects: [Subject.Art]
     },
     "brr_800": {
         type: RoomType.BoyRestRoom,
@@ -343,9 +368,16 @@ const b800 = {
         name: "Girls' Restroom",
     }
 };
-const b900 = {
-    "905": {
+const b900: Bldg = {
+    "901": {
+        type: RoomType.MultiPurposeRoom,
+        displayName: "901",
+        name: "Changing Room",
+    },
+    "902/903": {
         type: RoomType.ClassRoom,
+        displayName: "Drama",
+        name: "902/903: Drama",
         staff: ["Ms. Conrad"],
         subjects: [Subject.Art],
     },
@@ -371,14 +403,18 @@ const b900 = {
     },
     "913": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Demetriou"],
-        subjects: [Subject.Math],
+        staff: ["Ms. Jacob"],
+        subjects: [Subject.Language],
     },
     "914": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Demetriou"],
+        subjects: [Subject.Math],
     },
     "915": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Schaetzke"],
+        subjects: [Subject.Language],
     },
     "916": {
         type: RoomType.ClassRoom,
@@ -387,7 +423,7 @@ const b900 = {
     }
 
 };
-const b6000 = {
+const b6000: Bldg = {
     "6101": {
         type: RoomType.ClassRoom,
         staff: ["Ms. Jin"],
@@ -426,6 +462,8 @@ const b6000 = {
     },
     "6126": {
         type: RoomType.ClassRoom,
+        staff: ["Mrs. Ward, Mr. Heskett"],
+        subjects: [Subject.Special],
     },
     "6127": {
         type: RoomType.ClassRoom,
@@ -436,12 +474,12 @@ const b6000 = {
     "6201": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Morse"],
-        subjects: [Subject.History],
+        subjects: [Subject.SocialStudies],
     },
     "6205": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Yeh"],
-        subjects: [Subject.History],
+        subjects: [Subject.SocialStudies],
     },
     "6206": {
         type: RoomType.ClassRoom,
@@ -454,6 +492,8 @@ const b6000 = {
     },
     "6216": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Williams"],
+        subjects: [Subject.Math],
     },
     "6217": {
         type: RoomType.ClassRoom,
@@ -470,6 +510,8 @@ const b6000 = {
     },
     "6227": {
         type: RoomType.ClassRoom,
+        staff: ["Mrs. Hooper"],
+        subjects: [Subject.English]
     },
     "6228": {
         type: RoomType.ClassRoom,
@@ -506,7 +548,7 @@ const b6000 = {
         type: RoomType.AdminRestRoom,
     },
 };
-const b7000 = {
+const b7000: Bldg = {
     "7101": {
         type: RoomType.ClassRoom,
         staff: ["Mr. Goldenkranz"],
@@ -514,10 +556,12 @@ const b7000 = {
     },
     "7102": {
         type: RoomType.ClassRoom,
+        staff: ["Ms. Kuehn"],
+        subjects: [Subject.Science],
     },
     "7103": {
         type: RoomType.ClassRoom,
-        staff: ["Ms. Kuehn"],
+        staff: ["Ms. Kuehn", "Mr. Stavis"],
         subjects: [Subject.Science],
     },
     "7201": {
@@ -536,7 +580,7 @@ const b7000 = {
         subjects: [Subject.Science],
     },
 };
-const bMain = {
+const bMain: Bldg = {
     "brr_cafeteria": {
         type: RoomType.BoyRestRoom,
         name: "Boys' Restroom",
@@ -550,8 +594,13 @@ const bMain = {
         name: "Cafeteria",
     },
     "mezzanine": {
+        type: RoomType.MultiPurposeRoom,
+        displayName: "Mezzanine",
+        name: "Mezzanine | Cafeteria F2",
+    },
+    "balcony": {
         type: RoomType.RecArea,
-        name: "Mezzanine",
+        name: "Balcony",
     },
     "ccc": {
         type: RoomType.AdminRoom,
@@ -570,20 +619,22 @@ const bMain = {
         staff: ["Mrs. Hedstrom"]
     },
     "1214": {
-        type: RoomType.ClassRoom,
+        type: RoomType.AdminRoom,
+        displayName: "1214",
+        name: "Staff Support"
     },
     "1215": {
-        type: RoomType.ClassRoom,
+        type: RoomType.MultiPurposeRoom,
         displayName: "1215",
         name: "Computer Lab",
     },
     
 };
-const bMisc = {
+const bMisc: Bldg = {
     "theater": {
         type: RoomType.MultiPurposeRoom,
         displayName: "Theater",
-        name: "Robert B. Lopez Theater",
+        name: "Robert L. Lopez Center",
         subjects: [Subject.Music, Subject.Art],
     },
     "wagon_wheel": {
@@ -628,7 +679,7 @@ const bMisc = {
 };
 
 const data: Data = {
-    last_updated: moment("6-20-2023", "MM-DD-YYYY"),
+    last_updated: moment("08-14-2023", "MM-DD-YYYY"),
     github_link: "https://github.com/solunian/chs-map",
     rooms: new Map([
         ...o2m(b100),

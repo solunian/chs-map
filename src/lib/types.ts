@@ -20,10 +20,11 @@ export enum Subject {
     Art,
     Music,
     English,
-    History,
+    SocialStudies,
     Language,
     PE,
     Special,
+    CTE,
 }
 
 export interface Room {
@@ -32,6 +33,10 @@ export interface Room {
     name?: string;
     staff?: string[];
     subjects?: Subject[];
+}
+
+export interface Bldg {
+    [key: string]: Room;
 }
 
 export interface Data {
