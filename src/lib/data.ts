@@ -286,6 +286,27 @@ const b500: Bldg = {
         subjects: [Subject.Science],
     },
 };
+const b600: Bldg = {
+    "601": {
+        type: RoomType.ClassRoom,
+        staff: ["Mr. Paris"],
+        subjects: [Subject.Special],
+    },
+    "602": {
+        type: RoomType.ClassRoom,
+        staff: ["Ms. Filice"],
+        subjects: [Subject.English],
+    },
+    "603": {
+        type: RoomType.ClassRoom,
+    },
+    "604": {
+        type: RoomType.AdminRoom,
+        displayName: "ASB",
+        name: "604: ASB Office",
+        staff: ["Ms. Nguyen"]
+    },
+};
 const b700: Bldg = {
     "701": {
         type: RoomType.MultiPurposeRoom,
@@ -313,25 +334,6 @@ const b700: Bldg = {
     "709": {
         type: RoomType.ClassRoom,
         subjects: [Subject.Special],
-    },
-    "721": {
-        type: RoomType.ClassRoom,
-        staff: ["Mr. Paris"],
-        subjects: [Subject.Special],
-    },
-    "722": {
-        type: RoomType.ClassRoom,
-        staff: ["Ms. Filice"],
-        subjects: [Subject.English],
-    },
-    "723": {
-        type: RoomType.ClassRoom,
-    },
-    "724": {
-        type: RoomType.AdminRoom,
-        displayName: "ASB",
-        name: "724: ASB Office",
-        staff: ["Ms. Nguyen"]
     },
     "brr_700": {
         name: "Boys' Restroom",
@@ -687,6 +689,7 @@ const data: Data = {
         ...o2m(b300),
         ...o2m(b400),
         ...o2m(b500),
+        ...o2m(b600),
         ...o2m(b700),
         ...o2m(b800),
         ...o2m(b900),

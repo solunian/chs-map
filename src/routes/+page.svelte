@@ -25,6 +25,7 @@
     import Library from "$lib/components/svgs/Library.svelte";
     import BldgMain from "$lib/components/bldgs/BldgMain.svelte";
     import Roads from "$lib/components/Roads.svelte";
+  import BldgSix from "$lib/components/bldgs/BldgSix.svelte";
 </script>
 
 <svelte:head>
@@ -40,6 +41,7 @@
 <BldgThree/>
 <BldgFour/>
 <BldgFive/>
+<BldgSix/>
 <BldgSeven/>
 <BldgEight/>
 <BldgNine/>
