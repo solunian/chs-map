@@ -18,13 +18,15 @@ The `data.ts` file has all the values for the map, all in a Javascript object. H
 - The first subject in the subjects array determines the color of the `Rect`.
 
 Here's the interface definition for Room:
+
 ```ts
 interface Room {
-    type: RoomType;
-    displayName?: string;
-    name?: string;
-    staff?: string[];
-    subjects?: Subject[];
+  type: RoomType;
+  displayName?: string;
+  name?: string;
+  staff?: string[];
+  subjects?: Subject[];
 }
 ```
+
 All other types are in the `types.ts` file.
