@@ -31,14 +31,17 @@
   import BldgSix from "$lib/components/bldgs/BldgSix.svelte";
 
   import type { PageData } from "./$types";
+  import { onMount } from "svelte";
 
   export let data: PageData;
 
   // if some rooms are on first floor (and are hidden in second floor mode), others on second, second floor one will show first, toggle can be used to show the glowing rooms on first floor
   $glow = data.rooms;
-  if ($glow.some(isSecondFloor)) {
-    $isSecondFloorVisible = true;
-  }
+  onMount(() => {
+    if (data.rooms.some(isSecondFloor)) {
+      $isSecondFloorVisible = true;
+    }
+  });
 </script>
 
 <svelte:head>
