@@ -1,6 +1,7 @@
 import type { Moment } from "moment";
 
 export type ID = string;
+export type Club = string;
 export enum RoomType {
   ClassRoom,
   AdminRoom,

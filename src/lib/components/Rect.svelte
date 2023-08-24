@@ -8,6 +8,7 @@
     getHoverColor,
     formatTeacherList,
   } from "$lib/helper";
+  import { glow } from "$lib/stores";
   import { onMount } from "svelte";
   import RoomTypePill from "$lib/components/RoomTypePill.svelte";
   import SubjectPill from "$lib/components/SubjectPill.svelte";
@@ -44,6 +45,7 @@
   let tooltipWidth: number;
   let tooltipTop = h + 15; // the offset from the top of the room in px
   let tooltipLeft: number;
+
   onMount(() => {
     tooltipLeft = (w - tooltipWidth) / 2; // the offset from the left to make tooltip centered
   });
@@ -52,9 +54,8 @@
 <div>
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <div
-    id="tooltip-target"
-    class="absolute flex cursor-default flex-col justify-center rounded-md border border-none p-1 text-center transition ease-in hover:-translate-x-1 hover:-translate-y-1 hover:scale-105"
-    style="left: {x}px; top: {y}px; width: {w}px; height: {h}px; background-color: {normalColor};"
+    class="tooltip-target absolute flex cursor-default flex-col justify-center rounded-md border border-none p-1 text-center transition ease-in hover:-translate-x-1 hover:-translate-y-1 hover:scale-105"
+    style="left: {x}px; top: {y}px; width: {w}px; height: {h}px; background-color: {normalColor};{ $glow.includes(id) ? " box-shadow: 8px 8px 20px yellow, -8px 8px 20px yellow, 8px -8px 20px yellow, -8px -8px 20px yellow; z-index: 1;" : "" }"
     on:mouseover={(e) => (e.currentTarget.style.backgroundColor = hoverColor)}
     on:mouseleave={(e) => (e.currentTarget.style.backgroundColor = normalColor)}
     on:focus>
@@ -62,8 +63,7 @@
   </div>
 
   <div
-    id="tooltip"
-    class="pointer-events-none"
+    class="tooltip pointer-events-none"
     bind:clientWidth={tooltipWidth}
     style="top: {y + tooltipTop}px; left: {x + tooltipLeft}px;">
     <h3>#️⃣ {tooltipRoomText}</h3>
@@ -82,23 +82,11 @@
 </div>
 
 <style>
-  #tooltip-target {
+  .tooltip-target {
     @apply z-0;
   }
 
-  #tooltip::before {
-    content: "";
-    transform: translate(-50%, -100%);
-    @apply absolute left-1/2 top-0 block w-0;
-    @apply border-8 border-transparent border-b-black;
-  }
-
-  #tooltip {
-    @apply invisible z-10 bg-black text-center text-white;
-    @apply absolute whitespace-nowrap;
-    @apply rounded-md px-3 py-3;
-  }
-  #tooltip-target:hover ~ #tooltip {
+  .tooltip-target:hover + .tooltip {
     @apply visible;
   }
 </style>

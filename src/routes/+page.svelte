@@ -1,4 +1,8 @@
 <script lang="ts">
+  import data from "$lib/data";
+  import "$lib/rooms.css";
+  import { isSecondFloor } from "$lib/helper";
+
   import FloorToggle from "$lib/components/FloorToggle.svelte";
   import Header from "$lib/components/Header.svelte";
 
@@ -20,12 +24,25 @@
   import WagonWheel from "$lib/components/bldgs/WagonWheel.svelte";
   import BldgPhysEd from "$lib/components/bldgs/BldgPhysEd.svelte";
   import CafeteriaF2 from "$lib/components/svgs/CafeteriaF2.svelte";
-  import { isSecondFloorVisible } from "$lib/stores";
+  import { isSecondFloorVisible, glow } from "$lib/stores";
   import Balcony from "$lib/components/svgs/Balcony.svelte";
   import Library from "$lib/components/svgs/Library.svelte";
   import BldgMain from "$lib/components/bldgs/BldgMain.svelte";
   import Roads from "$lib/components/Roads.svelte";
   import BldgSix from "$lib/components/bldgs/BldgSix.svelte";
+
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    let rooms = (new URLSearchParams(window.location.search)).get("rooms")?.toLowerCase();
+    //if some rooms are on first floor (and are hidden in second floor mode), others on second, second floor one will show first, toggle can be used to show the glowing rooms on first floor
+    if (rooms) {
+      $glow = rooms.split(",");
+      if ($glow.some(isSecondFloor)) {
+        $isSecondFloorVisible = true;
+      }
+    }
+  });
 </script>
 
 <svelte:head>

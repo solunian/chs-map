@@ -11,6 +11,7 @@
   import RoomTypePill from "$lib/components/RoomTypePill.svelte";
   import { RoomType } from "$lib/types";
   import SubjectPill from "$lib/components/SubjectPill.svelte";
+  import { glow } from "$lib/stores";
 
   let x = 812,
     y = 850,
@@ -50,10 +51,10 @@
 <div
   class="absolute z-0 inline-block text-center transition"
   style="left: {x}px; top: {y}px; 
-transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%, {scaleValue}%);">
+transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%, {scaleValue}%);{ $glow.includes(id) ? " box-shadow: 8px 8px 20px yellow, -8px 8px 20px yellow, 8px -8px 20px yellow, -8px -8px 20px yellow; z-index: 1;" : "" }">
   <div>
     <svg
-      style="width: {w};"
+      width={w}
       viewBox="0 0 425 545"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -121,8 +122,7 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
   </div>
 
   <div
-    id="tooltip"
-    class="pointer-events-none"
+    class="tooltip pointer-events-none"
     bind:clientWidth={tooltipWidth}
     style="top: {tooltipTop}px; left: {tooltipLeft}px; visibility: {isHovering
       ? 'visible'
@@ -141,30 +141,3 @@ transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%
     </div>
   </div>
 </div>
-
-<style>
-  svg {
-    @apply fill-none;
-  }
-
-  .svg {
-    @apply border-none stroke-none stroke-0;
-  }
-
-  .svg:hover {
-    @apply stroke-none transition duration-200 ease-in-out;
-  }
-
-  #tooltip::before {
-    content: "";
-    transform: translate(-50%, -100%);
-    @apply absolute left-1/2 top-0 block w-0;
-    @apply border-8 border-transparent border-b-black;
-  }
-
-  #tooltip {
-    @apply invisible z-20 bg-black text-center text-white;
-    @apply absolute whitespace-nowrap;
-    @apply rounded-md px-3 py-3;
-  }
-</style>

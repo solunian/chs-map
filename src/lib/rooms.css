@@ -1,0 +1,24 @@
+.tooltip::before {
+  content: "";
+  transform: translate(-50%, -100%);
+  @apply absolute left-1/2 top-0 block w-0;
+  @apply border-8 border-transparent border-b-black;
+}
+
+.tooltip {
+  @apply invisible bg-black text-center text-white;
+  @apply absolute z-20 whitespace-nowrap;
+  @apply rounded-md px-3 py-3;
+}
+
+svg {
+  @apply fill-none;
+}
+
+.svg {
+  @apply border-none stroke-none stroke-0;
+}
+
+.svg:hover {
+  @apply stroke-none transition duration-200 ease-in-out;
+}

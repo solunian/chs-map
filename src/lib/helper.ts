@@ -103,3 +103,5 @@ export const formatTeacherList = (teacherArr: string[] | undefined) => {
 
 // object to map function to make my life easier
 export const o2m = (o: Bldg): Map<ID, Room> => new Map(Object.entries(o));
+
+export const isSecondFloor = (id: ID): boolean => id.startsWith("62") || id.startsWith("72") || ["balcony", "1214", "1215", "library", "mezzanine"].includes(id);
