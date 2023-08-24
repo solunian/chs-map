@@ -51,7 +51,11 @@
 <div
   class="absolute inline-block text-center transition"
   style="left: {x}px; top: {y}px; 
-transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%, {scaleValue}%);{ $glow.includes(id) ? " box-shadow: 8px 8px 20px yellow, -8px 8px 20px yellow, 8px -8px 20px yellow, -8px -8px 20px yellow; z-index: 1;" : "" }">
+transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%, {scaleValue}%);{$glow.includes(
+    id
+  )
+    ? ' box-shadow: 8px 8px 20px yellow, -8px 8px 20px yellow, 8px -8px 20px yellow, -8px -8px 20px yellow; z-index: 1;'
+    : ''}">
   <div>
     <svg
       width={w}

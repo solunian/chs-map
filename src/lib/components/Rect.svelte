@@ -55,7 +55,11 @@
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <div
     class="tooltip-target absolute flex cursor-default flex-col justify-center rounded-md border border-none p-1 text-center transition ease-in hover:-translate-x-1 hover:-translate-y-1 hover:scale-105"
-    style="left: {x}px; top: {y}px; width: {w}px; height: {h}px; background-color: {normalColor};{ $glow.includes(id) ? " box-shadow: 8px 8px 20px yellow, -8px 8px 20px yellow, 8px -8px 20px yellow, -8px -8px 20px yellow; z-index: 1;" : "" }"
+    style="left: {x}px; top: {y}px; width: {w}px; height: {h}px; background-color: {normalColor};{$glow.includes(
+      id
+    )
+      ? ' box-shadow: 8px 8px 20px yellow, -8px 8px 20px yellow, 8px -8px 20px yellow, -8px -8px 20px yellow; z-index: 1;'
+      : ''}"
     on:mouseover={(e) => (e.currentTarget.style.backgroundColor = hoverColor)}
     on:mouseleave={(e) => (e.currentTarget.style.backgroundColor = normalColor)}
     on:focus>

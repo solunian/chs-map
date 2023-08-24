@@ -677,7 +677,7 @@ const bMisc: Bldg = {
   },
 };
 
-const data: Data = {
+const mapData: Data = {
   last_updated: moment("08-22-2023", "MM-DD-YYYY"),
   github_link: "https://github.com/solunian/chs-map",
   rooms: new Map([
@@ -696,4 +696,4 @@ const data: Data = {
     ...o2m(bMisc),
   ]),
 };
-export default data;
+export default mapData;
