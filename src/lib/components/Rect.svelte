@@ -12,6 +12,7 @@
   import { onMount } from "svelte";
   import RoomTypePill from "$lib/components/RoomTypePill.svelte";
   import SubjectPill from "$lib/components/SubjectPill.svelte";
+  import { GLOW_STYLING } from "$lib/constants";
 
   export let x: number, y: number, w: number, h: number, id: string;
 
@@ -58,7 +59,7 @@
     style="left: {x}px; top: {y}px; width: {w}px; height: {h}px; background-color: {normalColor};{$glow.includes(
       id
     )
-      ? ' box-shadow: 8px 8px 20px yellow, -8px 8px 20px yellow, 8px -8px 20px yellow, -8px -8px 20px yellow; z-index: 1;'
+      ? GLOW_STYLING
       : ''}"
     on:mouseover={(e) => (e.currentTarget.style.backgroundColor = hoverColor)}
     on:mouseleave={(e) => (e.currentTarget.style.backgroundColor = normalColor)}

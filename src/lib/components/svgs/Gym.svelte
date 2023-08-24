@@ -12,6 +12,7 @@
   import { RoomType } from "$lib/types";
   import SubjectPill from "$lib/components/SubjectPill.svelte";
   import { glow } from "$lib/stores";
+  import { GLOW_STYLING } from "$lib/constants";
 
   let x = 945,
     y = 730,
@@ -49,13 +50,10 @@
 </script>
 
 <div
-  class="absolute z-0 inline-block text-center transition"
+  class="absolute z-0 inline-block rounded-lg text-center transition"
   style="left: {x}px; top: {y}px; 
-transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%, {scaleValue}%);{$glow.includes(
-    id
-  )
-    ? ' box-shadow: 8px 8px 20px yellow, -8px 8px 20px yellow, 8px -8px 20px yellow, -8px -8px 20px yellow; z-index: 1;'
-    : ''}">
+    transform: translate({translateValue}px, {translateValue}px) scale({scaleValue}%, {scaleValue}%);
+    {$glow.includes(id) ? GLOW_STYLING : ''}">
   <div>
     <svg
       width={w}
