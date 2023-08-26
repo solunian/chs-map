@@ -5,7 +5,6 @@ Generally meant for freshmen, newcomers, and finding classrooms around campus. I
 
 Query parameters highlight the room(s), contributed by @downloadablecontent! See in action here: https://chs-map.vercel.app?rooms=307.
 
-
 ## Contributing
 
 If you find some information missing on the website, you can add an issue to this repo. Or... you can fork this repo, edit the `src/lib/data.ts` file, and submit a pull request.

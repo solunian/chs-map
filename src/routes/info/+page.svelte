@@ -30,16 +30,35 @@
       <h1>Info</h1>
     </div>
 
-    <h2 class="text-sm">created by: Daniel Cui</h2>
+    <h2 class="text-sm md:text-lg">created by: Daniel Cui</h2>
 
-    <h2 class="pb-4 text-sm text-amber-800">
+    <h2 class="pb-4 text-sm text-amber-800 md:text-lg">
       last updated: {data.last_updated.format("MMM Do, YYYY")}
     </h2>
 
-    <p>
-      Well, hello there! This is a map for Cupertino High School. I hope students get a bit of use
-      of this; otherwise, it'd be a little sad. Ah well, I only spent a week on this. 🤓
-    </p>
+    <div class="flex flex-col gap-6">
+      <p>
+        Well, hello there! This is a map for Cupertino High School. I hope students get a bit of use
+        of this; otherwise, it'd be a little sad. Ah well, I only spent a week on this. 🤓
+      </p>
+
+      <p>
+        It'd also be cool if you starred this project on <span class="text-green-600">GitHub</span>
+        lol.
+        <a href="https://www.youtube.com/watch?v=S9AoqEYVs1c" target="_blank">⭐</a>
+      </p>
+
+      <p>
+        Welp, this is Daniel about two months after finishing the original implementation. I've
+        added a bit more functionality on this with some help from Taisei. There are now query
+        parameters in the URL to highlight rooms for clubs on
+        <a
+          href="https://tinoclubs.com"
+          class="text-amber-800 decoration-rose-800 decoration-wavy hover:underline"
+          target="_blank">tinoclubs.com</a
+        >. Thanks Ryan and Jiaming!
+      </p>
+    </div>
 
     <h2 class="mb-2 mt-8 text-xl underline">Contributing!</h2>
     <div class="flex flex-col gap-6">
@@ -59,8 +78,7 @@
         If you want to be extra amazing, you can open an issue on the <span class="text-green-600"
           >GitHub</span>
         repo on the issues tab instead of messaging me. Or... you can fork the repo and submit a pull
-        request by editing the src/lib/data.ts file. Also, please leave a star if you like this!
-        <a href="https://www.youtube.com/watch?v=S9AoqEYVs1c" target="_blank">⭐</a>
+        request by editing the src/lib/data.ts file.
       </p>
     </div>
 
@@ -98,7 +116,7 @@
 
       <div class="text-green-600">
         GitHub: <a
-          class="text-amber-800 decoration-rose-800 decoration-wavy underline-offset-4 hover:underline"
+          class="text-amber-800 decoration-rose-800 decoration-wavy hover:underline"
           href={data.github_link}
           target="_blank">github.com/solunian/chs-map</a>
       </div>
@@ -121,7 +139,7 @@
             d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
         </svg>
         <a
-          class="text-amber-800 decoration-rose-800 decoration-wavy underline-offset-4 hover:underline"
+          class="text-amber-800 decoration-rose-800 decoration-wavy hover:underline"
           href="https://goo.gl/maps/8iUWZxH9hubNiYJv8"
           target="_blank">Cupertino High School</a>
       </div>

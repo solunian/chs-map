@@ -3,6 +3,15 @@ import { RoomType, Subject } from "$lib/types";
 import { o2m } from "$lib/helper";
 import moment from "moment";
 
+const mapData: Data = {
+  // ======================================================== //
+  // MAKE SURE TO UPDATE THE DATE AFTER CHANGING THIS FILE!!! //
+  // ======================================================== //
+  last_updated: moment("08-25-2023", "MM-DD-YYYY"),
+  github_link: "https://github.com/solunian/chs-map",
+  rooms: new Map(),
+};
+
 const b100: Bldg = {
   "101": {
     type: RoomType.ClassRoom,
@@ -677,23 +686,20 @@ const bMisc: Bldg = {
   },
 };
 
-const mapData: Data = {
-  last_updated: moment("08-22-2023", "MM-DD-YYYY"),
-  github_link: "https://github.com/solunian/chs-map",
-  rooms: new Map([
-    ...o2m(b100),
-    ...o2m(b200),
-    ...o2m(b300),
-    ...o2m(b400),
-    ...o2m(b500),
-    ...o2m(b600),
-    ...o2m(b700),
-    ...o2m(b800),
-    ...o2m(b900),
-    ...o2m(b6000),
-    ...o2m(b7000),
-    ...o2m(bMain),
-    ...o2m(bMisc),
-  ]),
-};
+mapData.rooms = new Map([
+  ...o2m(b100),
+  ...o2m(b200),
+  ...o2m(b300),
+  ...o2m(b400),
+  ...o2m(b500),
+  ...o2m(b600),
+  ...o2m(b700),
+  ...o2m(b800),
+  ...o2m(b900),
+  ...o2m(b6000),
+  ...o2m(b7000),
+  ...o2m(bMain),
+  ...o2m(bMisc),
+]);
+
 export default mapData;
