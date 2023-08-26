@@ -32,6 +32,8 @@
 
   import type { PageData } from "./$types";
   import { onMount } from "svelte";
+  import { goto } from "$app/navigation";
+  import { fade } from "svelte/transition";
 
   export let data: PageData;
 
@@ -50,6 +52,31 @@
 
 <Header />
 <FloorToggle />
+
+{#if $glow.length > 0}
+  <button
+    out:fade
+    class="invisible fixed right-[16.5rem] top-4 z-20 flex flex-row flex-nowrap items-center gap-1
+    rounded-full border-2 border-gray-500 bg-gray-200 py-1 pl-2 pr-1 font-semibold text-gray-500 transition ease-in-out hover:scale-105 lg:visible"
+    on:click={() => {
+      $glow = [];
+      goto("/");
+    }}>
+    clear highlight
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      class="h-6 w-6">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  </button>
+{/if}
 
 <BldgOne />
 <BldgTwo />

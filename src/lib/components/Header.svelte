@@ -1,19 +1,13 @@
 <script lang="ts">
-  import { MD_BREAKPOINT } from "$lib/constants";
-  import { windowWidth } from "$lib/stores";
-
   let isHovering = false;
 </script>
 
 <!-- CUPERTINO HIGH SCHOOL HEADER -->
 <header
-  class="fixed left-6 z-30 inline rounded-b-xl bg-amber-200 px-5 pb-3 pt-4 text-3xl font-bold text-rose-700">
+  class="fixed left-6 z-30 mr-2 inline rounded-b-xl bg-amber-200 px-5 pb-3 pt-4 text-3xl font-bold text-rose-700">
   <div class="flex flex-row content-center gap-3">
-    {#if $windowWidth <= MD_BREAKPOINT}
-      CHS Map
-    {:else}
-      Cupertino High School Map
-    {/if}
+    <span class="inline lg:hidden"> CHS Map </span>
+    <span class="hidden lg:inline"> Cupertino High School Map </span>
 
     <a
       href="/info"

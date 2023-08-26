@@ -5,7 +5,7 @@ declare global {
     // interface Error {}
     // interface Locals {}
     interface PageData {
-      rooms: String[];
+      rooms: string[];
     }
     // interface Platform {}
   }

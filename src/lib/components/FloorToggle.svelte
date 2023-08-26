@@ -1,35 +1,19 @@
 <script lang="ts">
-  import { MD_BREAKPOINT } from "$lib/constants";
-  import { isSecondFloorVisible, windowWidth } from "$lib/stores";
+  import { isSecondFloorVisible } from "$lib/stores";
 </script>
 
-{#if $windowWidth <= MD_BREAKPOINT}
-  <div class="fixed right-24 top-5 z-20 h-7 w-11 text-center">
-    <label class="switch">
-      <input type="checkbox" bind:checked={$isSecondFloorVisible} />
-      <span class="slider round" />
-    </label>
+<div class="fixed right-24 top-5 z-20 h-7 w-11 text-center lg:right-44">
+  <label class="switch">
+    <input type="checkbox" bind:checked={$isSecondFloorVisible} />
+    <span class="slider round" />
+  </label>
 
-    {#if !$isSecondFloorVisible}
-      <h3 class="relative mt-2 w-20 -translate-x-4 text-sm text-gray-500">1st floor</h3>
-    {:else}
-      <h3 class="relative mt-2 w-20 -translate-x-4 text-sm text-sky-500">2nd floor</h3>
-    {/if}
-  </div>
-{:else}
-  <div class="fixed right-44 top-5 z-20 h-7 w-11 text-center">
-    <label class="switch">
-      <input type="checkbox" bind:checked={$isSecondFloorVisible} />
-      <span class="slider round" />
-    </label>
-
-    {#if !$isSecondFloorVisible}
-      <h3 class="relative mt-2 w-20 -translate-x-4 text-sm text-gray-500">1st floor</h3>
-    {:else}
-      <h3 class="relative mt-2 w-20 -translate-x-4 text-sm text-sky-500">2nd floor</h3>
-    {/if}
-  </div>
-{/if}
+  {#if !$isSecondFloorVisible}
+    <h3 class="relative mt-2 w-20 -translate-x-4 text-sm text-gray-500">1st floor</h3>
+  {:else}
+    <h3 class="relative mt-2 w-20 -translate-x-4 text-sm text-sky-500">2nd floor</h3>
+  {/if}
+</div>
 
 <style>
   /* The switch - the box around the slider */

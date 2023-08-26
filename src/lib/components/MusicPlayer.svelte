@@ -15,7 +15,7 @@
 
 <audio bind:this={musicPlayer} src="ddlc_theme.mp3" loop />
 
-<div class="fixed right-24 top-4 z-20">
+<div class="invisible fixed right-24 top-4 z-20 lg:visible">
   <button id="tooltip-target">
     <!-- svelte-ignore a11y-no-static-element-interactions -->
     <svg

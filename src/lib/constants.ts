@@ -1,4 +1,4 @@
-export const MD_BREAKPOINT = 750;
+// export const MD_BREAKPOINT = 750;
 
 // the color values here are from sky-300 in tailwindcss :D
 export const GLOW_STYLING =
