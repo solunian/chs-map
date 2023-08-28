@@ -1,4 +1,4 @@
-# Cupertino High School Map 🗺️
+# Cupertino High School Map
 
 This is an interactive map of Cupertino High School using svelte, tailwindcss, and the power of svgs!
 Generally meant for freshmen, newcomers, and finding classrooms around campus. If you think it's cool, feel free to star this repo! ⭐
