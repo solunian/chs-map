@@ -57,7 +57,7 @@
   <button
     out:fade
     class="invisible fixed right-[16.5rem] top-4 z-20 flex flex-row flex-nowrap items-center gap-1
-    rounded-full border-2 border-gray-500 bg-gray-200 py-1 pl-2 pr-1 font-semibold text-gray-500 transition ease-in-out hover:scale-105 lg:visible"
+    rounded-full border-2 border-gray-500 bg-gray-200 py-1 pl-2 pr-1 font-semibold text-gray-500 transition ease-in hover:scale-105 lg:visible"
     on:click={() => {
       $glow = [];
       goto("/");
