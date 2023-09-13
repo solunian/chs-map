@@ -7,7 +7,7 @@ const mapData: Data = {
   // ======================================================== //
   // MAKE SURE TO UPDATE THE DATE AFTER CHANGING THIS FILE!!! //
   // ======================================================== //
-  last_updated: moment("09-07-2023", "MM-DD-YYYY"),
+  last_updated: moment("2023-09-12", "YYYY-MM-DD"),
   github_link: "https://github.com/solunian/chs-map",
   rooms: new Map(),
 };

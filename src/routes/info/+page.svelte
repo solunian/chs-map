@@ -58,6 +58,10 @@
           target="_blank">tinoclubs.com</a
         >. Thanks Ryan and Jiaming!
       </p>
+
+      <p>
+        Thanks to all the contributors! Y'all are great! 🔥🔥🔥
+      </p>
     </div>
 
     <h2 class="mb-2 mt-8 text-xl underline">Contributing!</h2>
