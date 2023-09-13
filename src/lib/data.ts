@@ -110,7 +110,7 @@ const b200: Bldg = {
   },
   "210": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Sato", "Ms. Shriver"],
+    staff: ["Ms. Shriver"],
     subjects: [Subject.English, Subject.Special],
   },
   "211": {
@@ -120,7 +120,7 @@ const b200: Bldg = {
   },
   "212": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Purse"],
+    staff: ["Ms. Joy"],
     subjects: [Subject.Special],
   },
   "213": {
@@ -150,8 +150,9 @@ const b300: Bldg = {
   },
   "309": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Sato"],
-    subjects: [Subject.SocialStudies, Subject.Special],
+    // staff: ["Ms. Sato"],
+    // subjects: [Subject.SocialStudies, Subject.Special],
+    //i'm not sure who teaches here now but sato isn't at tino anymore
   },
   "310": {
     type: RoomType.ClassRoom,
@@ -400,6 +401,7 @@ const b900: Bldg = {
     type: RoomType.ClassRoom,
     staff: ["Ms. Conrad"],
     subjects: [Subject.Art],
+    //i'm p sure this should be cooking, not drama (idk the teacher tho)
   },
   "911": {
     type: RoomType.ClassRoom,
@@ -685,6 +687,7 @@ const bMisc: Bldg = {
     subjects: [Subject.PE],
   },
 };
+//why is there no athletic trainer room :(
 
 mapData.rooms = new Map([
   ...o2m(b100),
