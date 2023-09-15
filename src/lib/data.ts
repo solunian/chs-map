@@ -7,7 +7,7 @@ const mapData: Data = {
   // ======================================================== //
   // MAKE SURE TO UPDATE THE DATE AFTER CHANGING THIS FILE!!! //
   // ======================================================== //
-  last_updated: moment("2023-09-12", "YYYY-MM-DD"),
+  last_updated: moment("2023-09-14", "YYYY-MM-DD"),
   github_link: "https://github.com/solunian/chs-map",
   rooms: new Map(),
 };
@@ -217,7 +217,6 @@ const b400: Bldg = {
   },
   "410": {
     type: RoomType.ClassRoom,
-    subjects: [Subject.Special],
   },
   "411": {
     type: RoomType.ClassRoom,
