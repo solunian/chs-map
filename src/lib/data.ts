@@ -225,9 +225,7 @@ const b400: Bldg = {
     subjects: [Subject.Math],
   },
   "412": {
-    type: RoomType.ClassRoom,
-    staff: ["Instructor Roberts"],
-    subjects: [Subject.Math],
+    type: RoomType.ClassRoom
   },
   "413": {
     type: RoomType.ClassRoom,
@@ -246,6 +244,8 @@ const b400: Bldg = {
   },
   "420": {
     type: RoomType.ClassRoom,
+    staff: ["Instructor Roberts"],
+    subjects: [Subject.Math],
   },
 };
 const b500: Bldg = {
