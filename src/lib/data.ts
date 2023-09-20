@@ -466,6 +466,8 @@ const b6000: Bldg = {
   },
   "6120": {
     type: RoomType.ClassRoom,
+    staff: ["Ms. Reeve"],
+    subjects: [Subject.Special],
   },
   "6121": {
     type: RoomType.ClassRoom,
