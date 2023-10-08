@@ -224,7 +224,7 @@ const b400: Bldg = {
     subjects: [Subject.Math],
   },
   "412": {
-    type: RoomType.ClassRoom
+    type: RoomType.ClassRoom,
   },
   "413": {
     type: RoomType.ClassRoom,
