@@ -7,7 +7,7 @@ const mapData: Data = {
   // ======================================================== //
   // MAKE SURE TO UPDATE THE DATE AFTER CHANGING THIS FILE!!! //
   // ======================================================== //
-  last_updated: moment("2023-09-14", "YYYY-MM-DD"),
+  last_updated: moment("2023-11-01", "YYYY-MM-DD"),
   github_link: "https://github.com/solunian/chs-map",
   rooms: new Map(),
 };
@@ -400,7 +400,7 @@ const b900: Bldg = {
     type: RoomType.ClassRoom,
     staff: ["Ms. Conrad"],
     subjects: [Subject.Art],
-    //i'm p sure this should be cooking, not drama (idk the teacher tho)
+    // i'm p sure this should be cooking, not drama (idk the teacher tho)
   },
   "911": {
     type: RoomType.ClassRoom,
@@ -409,8 +409,8 @@ const b900: Bldg = {
   },
   "912": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Maleski"],
-    subjects: [Subject.Math],
+    staff: ["Ms. Boyle"],
+    subjects: [Subject.Special],
   },
   "913": {
     type: RoomType.ClassRoom,
@@ -688,7 +688,6 @@ const bMisc: Bldg = {
     subjects: [Subject.PE],
   },
 };
-//why is there no athletic trainer room :(
 
 mapData.rooms = new Map([
   ...o2m(b100),
