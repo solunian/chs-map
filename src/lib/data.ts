@@ -18,7 +18,7 @@ const b100: Bldg = {
   },
   "102": {
     type: RoomType.ClassRoom,
-    staff: ["Mr. Phares"],
+    staff: ["Mrs. Northrup"],
     subjects: [Subject.SocialStudies],
   },
   "103": {
