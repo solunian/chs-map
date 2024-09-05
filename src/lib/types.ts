@@ -26,6 +26,12 @@ export enum Subject {
   PE,
   Special,
   CTE,
+  Cooking,
+  ASB,
+  Drama,
+  Yearbook,
+  AVID,
+  GuidedStudies
 }
 
 export interface Room {

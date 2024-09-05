@@ -44,7 +44,7 @@ const b100: Bldg = {
   "107": {
     type: RoomType.ClassRoom,
     staff: ["Ms. Jin"],
-    subjects: [Subject.Chinese], //only for 2nd period
+    subjects: [Subject.Language], //only for 2nd period
   },
   "108": {
     type: RoomType.ClassRoom,
@@ -409,7 +409,6 @@ const b900: Bldg = {
   },
   "906": {
     type: RoomType.ClassRoom,
-    //displayName: "staff office" HOW DO I ADD AN OFFICE HERE
     staff: ["Ms. Conrad"],
     subjects: [Subject.Art],
   },
