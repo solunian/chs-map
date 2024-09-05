@@ -51,6 +51,19 @@ export const subjectDict: SubjectInfo[] = [];
     subjectStr: "cte",
     color: "cyan",
   };
+  subjectDict[Subject.Drama] = {
+    subjectStr: "drama",
+    color: "fuchsia",
+  };
+  subjectDict[Subject.Cooking] = {
+    subjectStr: "cooking",
+    color: "cyan",
+  };
+  subjectDict[Subject.GuidedStudies] = {
+    subjectStr: "guided studies",
+    color: "pink",
+  };
+  
 }
 export const defaultSubjectInfo: SubjectInfo = {
   subjectStr: "",
