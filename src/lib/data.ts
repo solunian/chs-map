@@ -36,7 +36,7 @@ const b100: Bldg = {
   "105": {
     type: RoomType.ClassRoom,
     staff: ["Ms. Stavis"],
-    subjects: [Subject.Other], // add yearbook as subject
+    subjects: [Subject.Yearbook], // add yearbook as subject
   },
   "106": {
     type: RoomType.ClassRoom,
@@ -147,7 +147,7 @@ const b300: Bldg = {
   "307": {
     type: RoomType.ClassRoom,
     staff: ["Mr. Ferrante"],
-    subjects: [Subject.CTE, Subject.Math], // maybe add CS as a course?
+    subjects: [Subject.CTE, Subject.Math],
   },
   "308": {
     type: RoomType.ClassRoom,
@@ -235,7 +235,7 @@ const b400: Bldg = {
   "412": {
     type: RoomType.ClassRoom,
     staff: ["Mr. Cryan"],
-    subjects: [Subject.Math], //Mr. Cryan P3, might have to go back
+    subjects: [Subject.Math], //Mr. Cryan P3
   },
   "413": {
     type: RoomType.ClassRoom,
@@ -309,7 +309,7 @@ const b600: Bldg = {
   "601": {
     type: RoomType.ClassRoom,
     staff: ["Mr. Paris"],
-    subjects: [Subject.Leadership], //ASB class, separate out from Special Ed
+    subjects: [Subject.ASB],
   },
   "602": {
     type: RoomType.ClassRoom,
@@ -348,7 +348,7 @@ const b700: Bldg = {
   },
   "708": {
     type: RoomType.ClassRoom,
-    staff: ["Mr. Shahrivar"], // confirm spelling
+    staff: ["Mr. Shahrivar"],
     subjects: [Subject.Special],
   },
   "709": {
@@ -398,24 +398,25 @@ const b900: Bldg = {
     type: RoomType.MultiPurposeRoom, // specify that it's a drama classroom
     displayName: "901",
     name: "Black Box",
+    subjects: [Subject.Art],
   },
   "902/903": {
     type: RoomType.ClassRoom,
     displayName: "Drama",
     name: "902/903: Drama",
     staff: ["Ms. Conrad"],
-    subjects: [Subject.Art],
+    subjects: [Subject.Art, Subject.Drama],
   },
   "906": {
     type: RoomType.ClassRoom,
-    //displayName: "staff office"
+    //displayName: "staff office" HOW DO I ADD AN OFFICE HERE
     staff: ["Ms. Conrad"],
     subjects: [Subject.Art],
   },
   "910": {
     type: RoomType.ClassRoom,
     staff: ["Chef Skrocke"],
-    subjects: [Subject.CTE], // is cooking separate
+    subjects: [Subject.CTE, Subject.Cooking], // is cooking separate
     // i'm p sure this should be cooking, not drama (idk the teacher tho)
   },
   "911": {
@@ -426,7 +427,7 @@ const b900: Bldg = {
   "912": {
     type: RoomType.ClassRoom,
     staff: ["Ms. Boyle"],
-    subjects: [Subject.CTE], // create guided studies subject? MULTI-classroom, maybe I'm misunderstanding "special"
+    subjects: [Subject.CTE, Subject.GuidedStudies],
   },
   "913": {
     type: RoomType.ClassRoom,
