@@ -7,7 +7,7 @@ const mapData: Data = {
   // ======================================================== //
   // MAKE SURE TO UPDATE THE DATE AFTER CHANGING THIS FILE!!! //
   // ======================================================== //
-  last_updated: moment("2024-01-10", "YYYY-MM-DD"),
+  last_updated: moment("2024-09-05", "YYYY-MM-DD"),
   github_link: "https://github.com/solunian/chs-map",
   rooms: new Map(),
 };
@@ -15,6 +15,8 @@ const mapData: Data = {
 const b100: Bldg = {
   "101": {
     type: RoomType.ClassRoom,
+    staff: ["Ms. Ornelas"],
+    subjects: [Subject.English],
   },
   "102": {
     type: RoomType.ClassRoom,
@@ -34,15 +36,15 @@ const b100: Bldg = {
   "105": {
     type: RoomType.ClassRoom,
     staff: ["Ms. Stavis"],
-    subjects: [Subject.Special],
+    subjects: [Subject.Yearbook], // add yearbook as subject
   },
   "106": {
     type: RoomType.ClassRoom,
   },
   "107": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Hazeghi"],
-    subjects: [Subject.English],
+    staff: ["Ms. Jin"],
+    subjects: [Subject.Chinese], //only for 2nd period
   },
   "108": {
     type: RoomType.ClassRoom,
@@ -52,17 +54,17 @@ const b100: Bldg = {
   "109": {
     type: RoomType.ClassRoom,
     staff: ["Ms. Santa Cruz"],
-    subjects: [Subject.SocialStudies],
+    subjects: [Subject.SocialStudies, Subject.AVID], // add AVID as subject
   },
   "110": {
     type: RoomType.ClassRoom,
-    staff: ["Mrs. Avvakumovits"],
+    staff: ["Mrs. Vernon"],
     subjects: [Subject.English],
   },
   "114": {
     type: RoomType.ClassRoom,
     staff: ["Mr. Morgan"],
-    subjects: [Subject.English],
+    subjects: [Subject.SocialStudies],
   },
   "115": {
     type: RoomType.ClassRoom,
@@ -72,7 +74,7 @@ const b100: Bldg = {
   "116": {
     type: RoomType.ClassRoom,
     staff: ["Ms. Phelps"],
-    subjects: [Subject.English, Subject.Special],
+    subjects: [Subject.English],
   },
   office_100: {
     type: RoomType.AdminRoom,
@@ -87,16 +89,18 @@ const b200: Bldg = {
   },
   "203": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Lowe Weiler"],
+    staff: ["Ms. Lowe-Weiler"],
     subjects: [Subject.SocialStudies],
   },
   "204": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Hazeghi"],
+    staff: ["Mr. Hazle"],
     subjects: [Subject.English],
   },
   "205": {
     type: RoomType.ClassRoom,
+    staff: ["Mr. Merrick"],
+    subjects: [Subject.AVID, Subject.English],
   },
   "206-7": {
     type: RoomType.ClassRoom,
@@ -111,12 +115,12 @@ const b200: Bldg = {
   "210": {
     type: RoomType.ClassRoom,
     staff: ["Ms. Shriver"],
-    subjects: [Subject.English, Subject.Special],
+    subjects: [Subject.English],
   },
   "211": {
     type: RoomType.ClassRoom,
     staff: ["Ms. Masuda"],
-    subjects: [Subject.English, Subject.Special],
+    subjects: [Subject.English],
   },
   "212": {
     type: RoomType.ClassRoom,
@@ -131,12 +135,12 @@ const b200: Bldg = {
   "214": {
     type: RoomType.RecArea,
     displayName: "214",
-    name: "Wellness Room",
+    name: "Wellness Center",
   },
   "215": {
-    type: RoomType.ClassRoom,
-    staff: ["Mr. Coleman"],
-    subjects: [Subject.SocialStudies],
+    type: RoomType.RecArea,
+    displayName: "215",
+    name: "Wellness Center", //update to look like 206-7
   },
 };
 const b300: Bldg = {
@@ -147,15 +151,18 @@ const b300: Bldg = {
   },
   "308": {
     type: RoomType.ClassRoom,
+    staff: ["Mr. Bower"],
+    subjects: [Subject.Special],
   },
   "309": {
     type: RoomType.ClassRoom,
-    // staff: ["Ms. Sato"],
-    // subjects: [Subject.SocialStudies, Subject.Special],
-    //i'm not sure who teaches here now but sato isn't at tino anymore
+    staff: ["Ms. Soto"],
+    subjects: [Subject.SocialStudies, Subject.Special],
   },
   "310": {
     type: RoomType.ClassRoom,
+    staff: ["Ms. DeKonning"],
+    subjects: [Subject.Special],
   },
   "314": {
     type: RoomType.ClassRoom,
@@ -197,7 +204,7 @@ const b400: Bldg = {
   },
   "404": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Lowe Weiler"],
+    staff: ["Ms. Lowe-Weiler"],
     subjects: [Subject.CTE],
   },
   "405": {
@@ -212,19 +219,23 @@ const b400: Bldg = {
   },
   "409": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Aguilar", "Ms. Keifer"],
+    staff: ["Ms. Aguilar"],
     subjects: [Subject.Language],
   },
   "410": {
     type: RoomType.ClassRoom,
+    staff: ["Ms. Amirault"],
+    subjects: [Subject.Special],
   },
   "411": {
     type: RoomType.ClassRoom,
-    staff: ["Instructor Choe"],
-    subjects: [Subject.Math],
+    staff: ["Mr. Scharf"],
+    subjects: [Subject.Music],
   },
   "412": {
     type: RoomType.ClassRoom,
+    staff: ["Mr. Cryan"],
+    subjects: [Subject.Math], //Mr. Cryan P3
   },
   "413": {
     type: RoomType.ClassRoom,
@@ -243,7 +254,7 @@ const b400: Bldg = {
   },
   "420": {
     type: RoomType.ClassRoom,
-    staff: ["Instructor Roberts"],
+    staff: ["Instructor Choe"],
     subjects: [Subject.Math],
   },
 };
@@ -260,7 +271,7 @@ const b500: Bldg = {
   },
   "503": {
     type: RoomType.ClassRoom,
-    staff: ["Mrs. Solheim"],
+    staff: ["Mr. Chen"],
     subjects: [Subject.Science],
   },
   "504": {
@@ -290,7 +301,7 @@ const b500: Bldg = {
   },
   "509": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Slowikowski"],
+    staff: ["Mrs. Slowikowski"],
     subjects: [Subject.Science],
   },
 };
@@ -298,7 +309,7 @@ const b600: Bldg = {
   "601": {
     type: RoomType.ClassRoom,
     staff: ["Mr. Paris"],
-    subjects: [Subject.Special],
+    subjects: [Subject.ASB],
   },
   "602": {
     type: RoomType.ClassRoom,
@@ -337,6 +348,7 @@ const b700: Bldg = {
   },
   "708": {
     type: RoomType.ClassRoom,
+    staff: ["Mr. Shahrivar"],
     subjects: [Subject.Special],
   },
   "709": {
@@ -363,6 +375,9 @@ const b800: Bldg = {
   },
   "810": {
     type: RoomType.ClassRoom,
+    staff: ["Ms. Vadeboncoeur"],
+    subjects: [Subject.Art],
+    
   },
   "815": {
     type: RoomType.ClassRoom,
@@ -380,26 +395,28 @@ const b800: Bldg = {
 };
 const b900: Bldg = {
   "901": {
-    type: RoomType.MultiPurposeRoom,
+    type: RoomType.MultiPurposeRoom, // specify that it's a drama classroom
     displayName: "901",
-    name: "Changing Room",
+    name: "Black Box",
+    subjects: [Subject.Art],
   },
   "902/903": {
     type: RoomType.ClassRoom,
     displayName: "Drama",
     name: "902/903: Drama",
     staff: ["Ms. Conrad"],
-    subjects: [Subject.Art],
+    subjects: [Subject.Art, Subject.Drama],
   },
   "906": {
     type: RoomType.ClassRoom,
+    //displayName: "staff office" HOW DO I ADD AN OFFICE HERE
     staff: ["Ms. Conrad"],
     subjects: [Subject.Art],
   },
   "910": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Conrad"],
-    subjects: [Subject.Art],
+    staff: ["Chef Skrocke"],
+    subjects: [Subject.CTE, Subject.Cooking], // is cooking separate
     // i'm p sure this should be cooking, not drama (idk the teacher tho)
   },
   "911": {
@@ -410,7 +427,7 @@ const b900: Bldg = {
   "912": {
     type: RoomType.ClassRoom,
     staff: ["Ms. Boyle"],
-    subjects: [Subject.Special],
+    subjects: [Subject.CTE, Subject.GuidedStudies],
   },
   "913": {
     type: RoomType.ClassRoom,
@@ -419,7 +436,7 @@ const b900: Bldg = {
   },
   "914": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Demetriou"],
+    staff: ["Mrs. Demetriou"],
     subjects: [Subject.Math],
   },
   "915": {
@@ -429,7 +446,7 @@ const b900: Bldg = {
   },
   "916": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Canton"],
+    staff: ["Ms. Hernandez-Salazar"],
     subjects: [Subject.Language],
   },
 };
@@ -450,6 +467,8 @@ const b6000: Bldg = {
   },
   "6110": {
     type: RoomType.ClassRoom,
+    staff: ["Ms. Davis"],
+    subjects: [Subject.English], // maybe specify ELD
   },
   "6111": {
     type: RoomType.ClassRoom,
@@ -466,22 +485,28 @@ const b6000: Bldg = {
   },
   "6120": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Reeve"],
-    subjects: [Subject.Special],
+    staff: ["Mr. Han"],
+    subjects: [Subject.English],
   },
   "6121": {
     type: RoomType.ClassRoom,
+    staff: ["Ms. Lee"],
+    subjects: [Subject.Special],
   },
   "6126": {
     type: RoomType.ClassRoom,
-    staff: ["Mrs. Ward, Mr. Heskett"],
+    staff: ["Ms. Reeve"],
     subjects: [Subject.Special],
   },
   "6127": {
     type: RoomType.ClassRoom,
+    staff: ["Mr. Koukoutsakis"],
+    subjects: [Subject.Special],
   },
   "6131": {
     type: RoomType.ClassRoom,
+    staff: ["Ms. Ning"],
+    subjects: [Subject.Special],
   },
   "6201": {
     type: RoomType.ClassRoom,
@@ -500,9 +525,13 @@ const b6000: Bldg = {
   },
   "6211": {
     type: RoomType.ClassRoom,
+    staff: ["Mr. Phares"],
+    subjects: [Subject.SocialStudies],
   },
   "6212": {
     type: RoomType.ClassRoom,
+    staff: ["Ms. Smith"],
+    subjects: [Subject.English],
   },
   "6216": {
     type: RoomType.ClassRoom,
@@ -516,10 +545,12 @@ const b6000: Bldg = {
   },
   "6221": {
     type: RoomType.ClassRoom,
+    staff: ["Mr. Shieh"],
+    subjects: [Subject.Math],
   },
   "6222": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Padgett"],
+    staff: ["Mrs. Padgett"],
     subjects: [Subject.English],
   },
   "6227": {
@@ -530,7 +561,7 @@ const b6000: Bldg = {
   "6228": {
     type: RoomType.ClassRoom,
     staff: ["Mr. Jacobs"],
-    subjects: [Subject.English, Subject.Special],
+    subjects: [Subject.English],
   },
   "6232": {
     type: RoomType.ClassRoom,
@@ -565,12 +596,12 @@ const b6000: Bldg = {
 const b7000: Bldg = {
   "7101": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Kuehn", "Mr. Stavis"],
+    staff: ["Ms. Watkins-Ryner"],
     subjects: [Subject.Science],
   },
   "7102": {
     type: RoomType.ClassRoom,
-    staff: ["Ms. Kuehn"],
+    staff: ["Ms. Plat"],
     subjects: [Subject.Science],
   },
   "7103": {
@@ -580,7 +611,7 @@ const b7000: Bldg = {
   },
   "7201": {
     type: RoomType.ClassRoom,
-    staff: ["Mr. Stavis"],
+    staff: ["Ms. Kuehn"],
     subjects: [Subject.Science],
   },
   "7202": {
