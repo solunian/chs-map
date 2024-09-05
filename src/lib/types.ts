@@ -26,9 +26,9 @@ export enum Subject {
   PE,
   Special,
   CTE,
+  Drama,
   Cooking,
   ASB,
-  Drama,
   Yearbook,
   AVID,
   GuidedStudies
