@@ -26,11 +26,11 @@ export enum Subject {
   PE,
   Special,
   CTE,
-  AVID,
-  Yearbook,
-  ASB,
-  Cooking,
   Drama,
+  Cooking,
+  ASB,
+  Yearbook,
+  AVID,
   GuidedStudies
 }
 
