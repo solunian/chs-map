@@ -655,7 +655,7 @@ const bMain: Bldg = {
   main_office: {
     type: RoomType.AdminRoom,
     name: "Main Office",
-    staff: ["Ms. Tomberlain"],
+    staff: ["Mr. Schloss"],
   },
   library: {
     type: RoomType.MultiPurposeRoom,
