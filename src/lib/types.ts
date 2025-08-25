@@ -31,7 +31,7 @@ export enum Subject {
   ASB,
   Yearbook,
   AVID,
-  GuidedStudies
+  GuidedStudies,
 }
 
 export interface Room {

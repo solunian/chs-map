@@ -67,27 +67,27 @@ export const subjectDict: SubjectInfo[] = [];
     subjectStr: "guided studies",
     color: "pink",
   };
-  
+
   subjectDict[Subject.Cooking] = {
     subjectStr: "cooking",
-    color: "fuchsia"
-  }
+    color: "fuchsia",
+  };
   subjectDict[Subject.Drama] = {
     subjectStr: "drama",
-    color: "fuchsia"
-  }
+    color: "fuchsia",
+  };
   subjectDict[Subject.Yearbook] = {
     subjectStr: "yearbook",
-    color: "indigo"
-  }
+    color: "indigo",
+  };
   subjectDict[Subject.AVID] = {
     subjectStr: "AVID",
-    color: "cyan"
-  }
+    color: "cyan",
+  };
   subjectDict[Subject.GuidedStudies] = {
     subjectStr: "guided studies",
-    color: "pink"
-  }
+    color: "pink",
+  };
 }
 export const defaultSubjectInfo: SubjectInfo = {
   subjectStr: "",
